@@ -1,0 +1,167 @@
+https://ewebot.livewp.site/bento/
+
+https://webflow.com/templates/html/conicorn-website-template
+
+
+I want to redesign my old website https://shriiitrackingsolution.in/ which in first screenshot too. I have a reference website for new design https://webflow.com/templates/html/conicorn-website-template which screenshot i gave you in second reference but this reference website is in black and white which i don't want. i want website in below color reference -
+
+--primary: #310a6e;
+--accent-primary: #b07aff;
+--accent-secondary: #8b5cf6;
+--accent-bright: #c49bff;
+--body: #f9f7ff
+
+website will be mostly in light theme. analyse reference website deeply and then generate propmt for making clone like website but for our website services and work related and don't mentio the reference website in the prompt and don't say clone this website but make prompt as AI make mostly the same website as in reference. add below functionality in this website too-
+
+
+
+## 🌐 Global Styling Rules
+
+Use CSS variables:
+
+```css
+
+:root {
+
+  --primary: #AACE46;
+
+  --primary-dark: #2B7802;
+
+  --accent: #EB2890;
+
+  --dark: #2B2A2A;
+
+  --black: #000000;
+
+  --light: #FFFFFF;
+
+  --light-soft: #F7F9F2;
+
+}
+
+```
+
+Typography:
+
+* Use `clamp()` for responsive scaling
+
+* Maintain strong hierarchy
+
+Reset:
+
+```css
+
+img { width: 100%; height: auto; display: block; }
+
+a { text-decoration: none; }
+
+textarea { resize: none; }
+
+```
+
+---
+
+## 🧱 Layout & Sections
+
+### 🔝 Navbar
+
+* Sticky with scroll effect
+
+* Logo
+
+* Menu
+
+
+
+## ✨ Animations & Effects
+
+Use **AOS**:
+
+```js
+
+AOS.init({
+
+  once: true,
+
+  duration: 800
+
+});
+
+```
+
+Include:
+
+* Fade-up animations
+
+* Subtle hover effects
+
+* Smooth transitions
+
+---
+
+## 📱 Responsive Design
+
+Breakpoints:
+
+* 991px
+
+* 767px
+
+* 575px
+
+
+
+## 🧰 Tech Stack
+
+* HTML5
+
+* CSS3 (Custom + Variables)
+
+* JavaScript (Vanilla)
+
+* Bootstrap (layout + offcanvas)
+
+* Swiper.js (slider)
+
+* AOS (animations)
+
+* Iconify (icons)
+
+
+
+## Required Component Functionality
+
+Non-Shrinking Banner:  The content within the banner must never shrink below its own height on mobile; it must expand the container vertically to prevent text cut-off.
+
+--nav-height: max(65px, calc(var(--brand-height) + 16px));
+
+.navbar-brand{
+
+            height: var(--brand-height);
+
+            padding: 0;
+
+        }
+
+        .navbar-brand img{
+
+            height: 100%;
+
+            width: auto;
+
+        }
+
+Navigation: Implement a Bootstrap Offcanvas navbar for mobile, with a background transition effect on scroll.
+
+
+
+Business Context:
+
+Business Name: Shriii Tracking Solution
+
+Niche/Industry: specialize in empowering local businesses to thrive online. With a dedicated focus on SEO, web development, graphic Designing, and Digital marketing,
+
+Data Source: https://shriiitrackingsolution.in/ Phone No.  +91 63547 10794,  +91 79909 09711, Email contact@shriiitrackingsolutions.com, Address- TF-A1-22, Akshar Pavilion Mall, Near Priya Cinema,Vasna Bhyali Main Road, Vadodara,391410
+
+
+

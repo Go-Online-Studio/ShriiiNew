@@ -1,0 +1,561 @@
+{
+  "categories": [
+    {
+      "id": "web-development",
+      "label": "Web Development",
+      "icon": "mdi:monitor-code",
+      "folder": "web-development",
+      "services": [
+        {
+          "id": "wordpress-development",
+          "slug": "wordpress-development.html",
+          "title": "WordPress Development",
+          "tagline": "Powerful, flexible websites built on the world's #1 CMS",
+          "icon": "mdi:wordpress",
+          "breadcrumb": ["Home", "Web Development", "WordPress Development"],
+          "overview": "Our WordPress development service delivers fully customized, high-performance websites tailored to your brand and business objectives. From bespoke theme design to advanced plugin integration, we build WordPress sites that are fast, secure, and optimized for conversions. Whether you need a corporate site, portfolio, blog, or membership platform, our team ensures a seamless experience from concept to launch.",
+          "features": [
+            { "icon": "mdi:palette-outline", "title": "Custom Theme Design", "desc": "Bespoke themes designed from scratch to match your brand identity perfectly." },
+            { "icon": "mdi:puzzle-outline", "title": "Plugin Integration", "desc": "Seamless integration of essential plugins for forms, SEO, caching, and security." },
+            { "icon": "mdi:cellphone-link", "title": "Responsive Layouts", "desc": "Pixel-perfect designs that look stunning on every screen size and device." },
+            { "icon": "mdi:speedometer", "title": "Speed Optimization", "desc": "Optimized code, lazy loading, and caching for lightning-fast load times." },
+            { "icon": "mdi:shield-check-outline", "title": "Security Hardening", "desc": "SSL, firewalls, and best practices to keep your site safe from threats." },
+            { "icon": "mdi:magnify", "title": "SEO-Ready Structure", "desc": "Clean code, schema markup, and semantic HTML built for search engines." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:clipboard-text-outline", "title": "Requirement Gathering", "desc": "We understand your goals, audience, and design preferences in detail." },
+            { "step": "02", "icon": "mdi:pencil-ruler", "title": "Design & Prototype", "desc": "Wireframes and mockups are created for your review and approval." },
+            { "step": "03", "icon": "mdi:code-braces", "title": "Development & Testing", "desc": "We code, integrate plugins, and rigorously test on all devices." },
+            { "step": "04", "icon": "mdi:rocket-launch-outline", "title": "Launch & Support", "desc": "We deploy your site and provide ongoing support and maintenance." }
+          ],
+          "benefits": [
+            { "icon": "mdi:trending-up", "title": "Higher Rankings", "desc": "SEO-optimized structure built to rank from day one on Google." },
+            { "icon": "mdi:account-group", "title": "Better Engagement", "desc": "Interactive, user-friendly experiences that convert visitors into customers." },
+            { "icon": "mdi:update", "title": "Easy Management", "desc": "Intuitive WordPress dashboard so you can update content effortlessly." }
+          ],
+          "faqs": [
+            { "q": "How long does WordPress development take?", "a": "Typically 2–4 weeks depending on complexity, number of pages, and custom feature requirements." },
+            { "q": "Can I update the website myself after launch?", "a": "Absolutely! WordPress has an intuitive admin dashboard. We also provide training and documentation." },
+            { "q": "Do you provide hosting and domain setup?", "a": "Yes, we can recommend and set up reliable hosting, configure your domain, and handle SSL installation." },
+            { "q": "Will my website be mobile-friendly?", "a": "Every site we build is fully responsive and tested across all major devices and browsers." }
+          ],
+          "relatedServiceIds": ["custom-web-development", "ecommerce-development"]
+        },
+        {
+          "id": "custom-web-development",
+          "slug": "custom-web-development.html",
+          "title": "Custom Web Development",
+          "tagline": "Tailor-made web solutions engineered for your unique business needs",
+          "icon": "mdi:code-tags",
+          "breadcrumb": ["Home", "Web Development", "Custom Web Development"],
+          "overview": "When off-the-shelf solutions don't cut it, our custom web development service delivers pixel-perfect, hand-coded websites and web applications built from the ground up. Using modern technologies like HTML5, CSS3, JavaScript, and server-side frameworks, we create scalable, high-performance digital products that perfectly align with your workflows, brand, and growth ambitions.",
+          "features": [
+            { "icon": "mdi:code-braces-box", "title": "Hand-Coded Frontend", "desc": "Clean, semantic HTML/CSS/JS for optimal performance and accessibility." },
+            { "icon": "mdi:database-outline", "title": "Backend Architecture", "desc": "Robust server-side solutions with secure databases and API integrations." },
+            { "icon": "mdi:api", "title": "API Development", "desc": "Custom REST or GraphQL APIs to connect your systems seamlessly." },
+            { "icon": "mdi:chart-line", "title": "Analytics Integration", "desc": "Built-in tracking and reporting dashboards for data-driven decisions." },
+            { "icon": "mdi:scale-balance", "title": "Scalable Infrastructure", "desc": "Architecture designed to handle growth from hundreds to millions of users." },
+            { "icon": "mdi:test-tube", "title": "QA & Testing", "desc": "Comprehensive unit, integration, and cross-browser testing before launch." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:lightbulb-outline", "title": "Discovery & Planning", "desc": "Deep dive into your requirements, user journeys, and technical specifications." },
+            { "step": "02", "icon": "mdi:draw", "title": "UI/UX Design", "desc": "Interactive prototypes and design systems tailored to your brand." },
+            { "step": "03", "icon": "mdi:laptop", "title": "Agile Development", "desc": "Iterative sprints with regular demos and feedback loops." },
+            { "step": "04", "icon": "mdi:check-decagram", "title": "Deploy & Iterate", "desc": "Production deployment with monitoring, feedback, and continuous improvement." }
+          ],
+          "benefits": [
+            { "icon": "mdi:infinity", "title": "Unlimited Flexibility", "desc": "No template limitations — every feature is built exactly how you need it." },
+            { "icon": "mdi:lightning-bolt", "title": "Superior Performance", "desc": "Lean, optimized code delivers faster load times than any page builder." },
+            { "icon": "mdi:lock-outline", "title": "Full Ownership", "desc": "You own 100% of the code with no vendor lock-in or recurring license fees." }
+          ],
+          "faqs": [
+            { "q": "What technologies do you use?", "a": "We work with HTML5, CSS3, JavaScript (vanilla & frameworks), PHP, Node.js, Python, and various databases depending on your project needs." },
+            { "q": "How is custom development different from WordPress?", "a": "Custom development gives you complete control over every line of code, resulting in better performance, security, and scalability without plugin dependencies." },
+            { "q": "Can you integrate with third-party services?", "a": "Yes, we build custom API integrations for payment gateways, CRMs, ERPs, marketing tools, and more." },
+            { "q": "What is the typical budget range?", "a": "Custom projects vary widely. We provide detailed quotes after understanding your requirements during the discovery phase." }
+          ],
+          "relatedServiceIds": ["wordpress-development", "landing-page-design"]
+        },
+        {
+          "id": "ecommerce-development",
+          "slug": "ecommerce-development.html",
+          "title": "E-Commerce Development",
+          "tagline": "Online stores that sell — built for conversions and scale",
+          "icon": "mdi:cart-outline",
+          "breadcrumb": ["Home", "Web Development", "E-Commerce Development"],
+          "overview": "Launch a powerful online store that drives sales around the clock. Our e-commerce development service covers everything from product catalog design and payment gateway integration to inventory management and shipping automation. We build on platforms like WooCommerce and Shopify, or create fully custom storefronts, ensuring your store is fast, secure, and optimized for maximum revenue.",
+          "features": [
+            { "icon": "mdi:store-outline", "title": "Storefront Design", "desc": "Beautiful, conversion-focused store layouts that showcase your products." },
+            { "icon": "mdi:credit-card-outline", "title": "Payment Integration", "desc": "Razorpay, Stripe, PayPal, UPI, and 20+ payment gateways supported." },
+            { "icon": "mdi:package-variant-closed", "title": "Inventory Management", "desc": "Real-time stock tracking, alerts, and multi-warehouse support." },
+            { "icon": "mdi:truck-delivery-outline", "title": "Shipping Automation", "desc": "Integrated shipping calculators, label generation, and tracking." },
+            { "icon": "mdi:shield-lock-outline", "title": "Secure Checkout", "desc": "PCI-compliant checkout flow with SSL encryption and fraud protection." },
+            { "icon": "mdi:cellphone-check", "title": "Mobile Commerce", "desc": "Responsive, app-like shopping experience on all mobile devices." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:clipboard-list-outline", "title": "Product & Scope Audit", "desc": "We analyze your product catalog, competitors, and target market." },
+            { "step": "02", "icon": "mdi:palette-swatch-outline", "title": "Store Design", "desc": "Custom storefront design with intuitive navigation and product pages." },
+            { "step": "03", "icon": "mdi:cog-outline", "title": "Build & Integrate", "desc": "Development, payment setup, shipping rules, and third-party tool integration." },
+            { "step": "04", "icon": "mdi:rocket-launch-outline", "title": "Launch & Optimize", "desc": "Go live, monitor analytics, and optimize the funnel for conversions." }
+          ],
+          "benefits": [
+            { "icon": "mdi:cash-multiple", "title": "24/7 Revenue", "desc": "Your store works around the clock, generating sales while you sleep." },
+            { "icon": "mdi:chart-areaspline", "title": "Scalable Growth", "desc": "Easily add products, categories, and features as your business grows." },
+            { "icon": "mdi:google-analytics", "title": "Data-Driven Insights", "desc": "Built-in analytics to track sales, customer behavior, and ROI." }
+          ],
+          "faqs": [
+            { "q": "Which e-commerce platform do you recommend?", "a": "It depends on your needs — WooCommerce for flexibility, Shopify for simplicity, or custom builds for unique requirements." },
+            { "q": "Can you migrate my existing store?", "a": "Yes, we handle seamless migrations from any platform with zero data loss and minimal downtime." },
+            { "q": "Do you set up payment gateways?", "a": "Absolutely. We integrate and test all major Indian and international payment gateways." },
+            { "q": "How do you handle product SEO?", "a": "Every product page is optimized with structured data, meta tags, clean URLs, and fast load times." }
+          ],
+          "relatedServiceIds": ["wordpress-development", "custom-web-development"]
+        },
+        {
+          "id": "landing-page-design",
+          "slug": "landing-page-design.html",
+          "title": "Landing Page Design",
+          "tagline": "High-converting landing pages that turn clicks into customers",
+          "icon": "mdi:monitor-cellphone-star",
+          "breadcrumb": ["Home", "Web Development", "Landing Page Design"],
+          "overview": "Our landing page design service creates focused, visually compelling pages engineered to maximize conversions. Whether you need a page for a product launch, ad campaign, lead generation, or event registration, we craft persuasive copy layouts, eye-catching visuals, and clear CTAs that guide visitors toward taking action. Every page is A/B tested and optimized for speed and mobile performance.",
+          "features": [
+            { "icon": "mdi:target", "title": "Conversion-Focused Layout", "desc": "Strategic placement of headlines, CTAs, and trust signals for max conversions." },
+            { "icon": "mdi:ab-testing", "title": "A/B Test Ready", "desc": "Built with testable variants so you can optimize performance over time." },
+            { "icon": "mdi:form-textbox", "title": "Lead Capture Forms", "desc": "Smart forms with validation, auto-responders, and CRM integration." },
+            { "icon": "mdi:speedometer", "title": "Lightning Fast", "desc": "Optimized assets and minimal code for sub-2-second load times." },
+            { "icon": "mdi:google-ads", "title": "Ad Platform Ready", "desc": "Tracking pixels, UTM parameters, and conversion goals pre-configured." },
+            { "icon": "mdi:animation-outline", "title": "Engaging Animations", "desc": "Subtle scroll animations and micro-interactions to boost engagement." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:bullseye-arrow", "title": "Goal Definition", "desc": "Define the campaign objective, audience, and key messaging." },
+            { "step": "02", "icon": "mdi:pencil-ruler", "title": "Wireframe & Copy", "desc": "Layout planning with persuasive copywriting optimized for conversions." },
+            { "step": "03", "icon": "mdi:brush-variant", "title": "Visual Design", "desc": "High-fidelity designs with your brand colors, imagery, and typography." },
+            { "step": "04", "icon": "mdi:publish", "title": "Build & Launch", "desc": "Pixel-perfect development, testing, and deployment with tracking setup." }
+          ],
+          "benefits": [
+            { "icon": "mdi:chart-bell-curve-cumulative", "title": "Higher Conversion Rates", "desc": "Focused design eliminates distractions and guides users to take action." },
+            { "icon": "mdi:currency-inr", "title": "Better Ad ROI", "desc": "Optimized pages mean lower cost-per-click and higher return on ad spend." },
+            { "icon": "mdi:clock-fast", "title": "Quick Turnaround", "desc": "Landing pages delivered in as little as 5–7 business days." }
+          ],
+          "faqs": [
+            { "q": "How soon can a landing page be ready?", "a": "Simple landing pages can be delivered in 5–7 days; complex ones with custom animations take 10–14 days." },
+            { "q": "Do you write the copy too?", "a": "Yes, our team includes copywriters who craft persuasive, conversion-optimized content for your audience." },
+            { "q": "Can the page integrate with my CRM?", "a": "Absolutely. We integrate with HubSpot, Zoho, Salesforce, Google Sheets, Mailchimp, and more." },
+            { "q": "Will it work with Google Ads or Meta Ads?", "a": "Yes. We set up tracking pixels, conversion goals, and UTM parameters for all major ad platforms." }
+          ],
+          "relatedServiceIds": ["custom-web-development", "social-media-design"]
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "label": "SEO Services",
+      "icon": "mdi:magnify",
+      "folder": "seo",
+      "services": [
+        {
+          "id": "local-seo",
+          "slug": "local-seo.html",
+          "title": "Local SEO",
+          "tagline": "Dominate local search results and drive foot traffic to your business",
+          "icon": "mdi:map-marker-radius",
+          "breadcrumb": ["Home", "SEO Services", "Local SEO"],
+          "overview": "Our Local SEO service ensures your business appears at the top of Google Maps and local search results when customers in your area search for your products or services. We optimize your Google Business Profile, build local citations, manage reviews, and create geo-targeted content that drives qualified local traffic to your doorstep. Perfect for businesses in Vadodara and across Gujarat.",
+          "features": [
+            { "icon": "mdi:google-maps", "title": "Google Maps Optimization", "desc": "Rank higher in the local 3-pack and map results for your target keywords." },
+            { "icon": "mdi:format-list-checks", "title": "Citation Building", "desc": "Consistent NAP listings across 50+ local and industry directories." },
+            { "icon": "mdi:star-outline", "title": "Review Management", "desc": "Strategies to earn more positive reviews and respond to feedback professionally." },
+            { "icon": "mdi:file-document-outline", "title": "Localized Content", "desc": "Geo-targeted pages and blog posts that speak to your local audience." },
+            { "icon": "mdi:web", "title": "Local Link Building", "desc": "Earn backlinks from local news sites, blogs, and community organizations." },
+            { "icon": "mdi:chart-bar", "title": "Rank Tracking", "desc": "Monthly reports showing your ranking progress for target local keywords." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:magnify-scan", "title": "Local Audit", "desc": "Analyze your current local presence, citations, and competitor landscape." },
+            { "step": "02", "icon": "mdi:wrench-outline", "title": "Foundation Setup", "desc": "Optimize GMB profile, fix NAP inconsistencies, and set up tracking." },
+            { "step": "03", "icon": "mdi:trending-up", "title": "Ongoing Optimization", "desc": "Weekly citation builds, review campaigns, and content updates." },
+            { "step": "04", "icon": "mdi:file-chart-outline", "title": "Report & Refine", "desc": "Monthly performance reports with actionable insights and strategy adjustments." }
+          ],
+          "benefits": [
+            { "icon": "mdi:map-marker-check-outline", "title": "Map Pack Rankings", "desc": "Appear in the top 3 Google Maps results for your most valuable keywords." },
+            { "icon": "mdi:walk", "title": "More Foot Traffic", "desc": "Drive real customers to your physical location through local visibility." },
+            { "icon": "mdi:phone-in-talk-outline", "title": "More Calls & Leads", "desc": "Increase phone calls, direction requests, and website visits from local search." }
+          ],
+          "faqs": [
+            { "q": "How long does Local SEO take to show results?", "a": "Most businesses see noticeable improvements within 60–90 days, with significant ranking gains by month 4–6." },
+            { "q": "Do I need a physical address for Local SEO?", "a": "A physical address helps, but service-area businesses can also benefit from Local SEO strategies using a verified GMB profile." },
+            { "q": "What areas do you cover?", "a": "While based in Vadodara, we serve businesses across Gujarat and India with localized SEO strategies." },
+            { "q": "How do you track Local SEO performance?", "a": "We use tools like BrightLocal, Google Search Console, and GMB Insights to track rankings, impressions, and actions." }
+          ],
+          "relatedServiceIds": ["on-page-seo", "gmb-setup-optimization"]
+        },
+        {
+          "id": "on-page-seo",
+          "slug": "on-page-seo.html",
+          "title": "On-Page SEO",
+          "tagline": "Optimize every element on your website for maximum search visibility",
+          "icon": "mdi:file-search-outline",
+          "breadcrumb": ["Home", "SEO Services", "On-Page SEO"],
+          "overview": "On-Page SEO is the foundation of any successful search strategy. We meticulously optimize every element of your website — from title tags, meta descriptions, and header structure to internal linking, image optimization, and content quality. Our on-page strategies ensure search engines can crawl, understand, and rank your pages for your target keywords, driving sustainable organic traffic growth.",
+          "features": [
+            { "icon": "mdi:tag-text-outline", "title": "Meta Tag Optimization", "desc": "Compelling title tags and meta descriptions that boost click-through rates." },
+            { "icon": "mdi:format-header-1", "title": "Header Structure", "desc": "Proper H1–H6 hierarchy for both user readability and search engines." },
+            { "icon": "mdi:image-filter-hdr", "title": "Image Optimization", "desc": "Compressed images with alt text, proper sizing, and lazy loading." },
+            { "icon": "mdi:link-variant", "title": "Internal Linking", "desc": "Strategic internal link architecture to distribute page authority." },
+            { "icon": "mdi:text-box-search-outline", "title": "Content Optimization", "desc": "Keyword placement, readability improvements, and content gap analysis." },
+            { "icon": "mdi:code-json", "title": "Schema Markup", "desc": "Structured data implementation for rich snippets in search results." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:magnify-scan", "title": "Site Audit", "desc": "Comprehensive crawl to identify on-page issues and opportunities." },
+            { "step": "02", "icon": "mdi:key-variant", "title": "Keyword Mapping", "desc": "Assign target keywords to specific pages based on intent and volume." },
+            { "step": "03", "icon": "mdi:pencil-outline", "title": "Optimization Sprint", "desc": "Implement meta tags, content updates, schema, and internal links." },
+            { "step": "04", "icon": "mdi:monitor-dashboard", "title": "Monitor & Iterate", "desc": "Track rankings, refine strategies, and optimize for emerging queries." }
+          ],
+          "benefits": [
+            { "icon": "mdi:trending-up", "title": "Higher Rankings", "desc": "Properly optimized pages rank faster and maintain positions longer." },
+            { "icon": "mdi:cursor-default-click-outline", "title": "Better CTR", "desc": "Optimized meta tags and rich snippets increase clicks from search results." },
+            { "icon": "mdi:account-check-outline", "title": "Improved UX", "desc": "Clean structure and fast loading create a better experience for visitors." }
+          ],
+          "faqs": [
+            { "q": "What exactly is On-Page SEO?", "a": "On-Page SEO refers to optimizing elements within your website — such as content, HTML tags, images, and internal links — to improve search rankings." },
+            { "q": "How often should on-page SEO be updated?", "a": "We recommend a quarterly audit with ongoing content optimization as search trends and algorithms evolve." },
+            { "q": "Can on-page SEO alone improve my rankings?", "a": "It's a critical foundation, but best results come when combined with technical SEO, content strategy, and link building." },
+            { "q": "Do you optimize existing content or create new?", "a": "Both. We improve existing pages and recommend new content opportunities based on keyword gap analysis." }
+          ],
+          "relatedServiceIds": ["off-page-seo", "technical-seo"]
+        },
+        {
+          "id": "off-page-seo",
+          "slug": "off-page-seo.html",
+          "title": "Off-Page SEO",
+          "tagline": "Build authority and trust through strategic backlinks and brand mentions",
+          "icon": "mdi:link-plus",
+          "breadcrumb": ["Home", "SEO Services", "Off-Page SEO"],
+          "overview": "Off-Page SEO focuses on building your website's authority, credibility, and trustworthiness through external signals. Our team executes ethical, white-hat link building campaigns, guest posting, digital PR, and brand mention strategies that earn high-quality backlinks from authoritative domains. We help establish your brand as an industry leader in the eyes of both search engines and your target audience.",
+          "features": [
+            { "icon": "mdi:link-variant", "title": "Quality Link Building", "desc": "Manual outreach to earn backlinks from high-DA, relevant websites." },
+            { "icon": "mdi:post-outline", "title": "Guest Posting", "desc": "Published articles on authoritative blogs in your industry niche." },
+            { "icon": "mdi:newspaper-variant-outline", "title": "Digital PR", "desc": "Press releases and media coverage to boost brand visibility and links." },
+            { "icon": "mdi:forum-outline", "title": "Community Engagement", "desc": "Strategic participation in forums, Q&A sites, and social platforms." },
+            { "icon": "mdi:chart-timeline-variant", "title": "Competitor Backlink Analysis", "desc": "Reverse-engineer competitor link profiles to find winning opportunities." },
+            { "icon": "mdi:shield-check-outline", "title": "Toxic Link Cleanup", "desc": "Identify and disavow harmful backlinks that could trigger penalties." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:file-search-outline", "title": "Backlink Audit", "desc": "Analyze your current backlink profile and identify gaps vs competitors." },
+            { "step": "02", "icon": "mdi:strategy", "title": "Strategy Design", "desc": "Create a customized link building roadmap based on your niche and goals." },
+            { "step": "03", "icon": "mdi:email-fast-outline", "title": "Outreach & Acquisition", "desc": "Manual outreach to bloggers, journalists, and webmasters for quality links." },
+            { "step": "04", "icon": "mdi:chart-box-outline", "title": "Monitor & Report", "desc": "Track new backlinks, domain authority growth, and ranking improvements." }
+          ],
+          "benefits": [
+            { "icon": "mdi:shield-star-outline", "title": "Domain Authority Growth", "desc": "Consistent, quality backlinks steadily increase your site's authority score." },
+            { "icon": "mdi:earth", "title": "Broader Reach", "desc": "Guest posts and PR place your brand in front of new, relevant audiences." },
+            { "icon": "mdi:trophy-outline", "title": "Competitive Edge", "desc": "Outrank competitors by building a stronger, more diverse backlink profile." }
+          ],
+          "faqs": [
+            { "q": "Is link building still important for SEO?", "a": "Absolutely. Backlinks remain one of Google's top 3 ranking factors. Quality links significantly impact rankings." },
+            { "q": "Do you use black-hat techniques?", "a": "Never. We use only white-hat, Google-approved methods — manual outreach, quality content, and genuine relationships." },
+            { "q": "How many backlinks will I get per month?", "a": "Quality over quantity. We typically secure 10–30 high-quality, relevant backlinks per month depending on the plan." },
+            { "q": "How do you measure Off-Page SEO success?", "a": "We track domain authority, referring domains, organic traffic growth, and keyword ranking improvements." }
+          ],
+          "relatedServiceIds": ["on-page-seo", "local-seo"]
+        },
+        {
+          "id": "technical-seo",
+          "slug": "technical-seo.html",
+          "title": "Technical SEO",
+          "tagline": "Fix the invisible barriers preventing your site from ranking higher",
+          "icon": "mdi:cog-outline",
+          "breadcrumb": ["Home", "SEO Services", "Technical SEO"],
+          "overview": "Technical SEO ensures your website's infrastructure is optimized for search engine crawling, indexing, and rendering. We address critical issues like site speed, mobile usability, crawl errors, XML sitemaps, robots.txt configuration, structured data, and Core Web Vitals. By fixing the technical foundation, we remove barriers that prevent your content from reaching its full ranking potential.",
+          "features": [
+            { "icon": "mdi:speedometer", "title": "Core Web Vitals", "desc": "Optimize LCP, FID, and CLS scores for better rankings and user experience." },
+            { "icon": "mdi:sitemap-outline", "title": "XML Sitemap & Robots.txt", "desc": "Properly configured sitemaps and crawl directives for efficient indexing." },
+            { "icon": "mdi:cellphone-check", "title": "Mobile Usability", "desc": "Full mobile-first audit and optimization for Google's mobile-first indexing." },
+            { "icon": "mdi:bug-outline", "title": "Crawl Error Resolution", "desc": "Fix 404s, redirect chains, broken links, and orphan pages." },
+            { "icon": "mdi:security", "title": "HTTPS & Security", "desc": "SSL configuration, mixed content fixes, and security header implementation." },
+            { "icon": "mdi:code-json", "title": "Structured Data", "desc": "Rich snippet markup for products, reviews, FAQs, breadcrumbs, and more." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:radar", "title": "Technical Crawl", "desc": "Deep crawl using Screaming Frog, Ahrefs, and Google Search Console data." },
+            { "step": "02", "icon": "mdi:clipboard-check-outline", "title": "Issue Prioritization", "desc": "Rank found issues by impact and create a prioritized fix roadmap." },
+            { "step": "03", "icon": "mdi:wrench-outline", "title": "Implementation", "desc": "Fix crawl errors, speed issues, mobile problems, and schema markup." },
+            { "step": "04", "icon": "mdi:refresh", "title": "Ongoing Monitoring", "desc": "Continuous monitoring for new issues with monthly health check reports." }
+          ],
+          "benefits": [
+            { "icon": "mdi:robot-outline", "title": "Better Crawlability", "desc": "Search engines can discover and index your pages faster and more efficiently." },
+            { "icon": "mdi:speedometer", "title": "Faster Load Times", "desc": "Speed optimizations improve both rankings and user satisfaction." },
+            { "icon": "mdi:check-decagram-outline", "title": "Fewer Errors", "desc": "Clean, error-free sites maintain rankings and avoid penalties." }
+          ],
+          "faqs": [
+            { "q": "What is Technical SEO exactly?", "a": "Technical SEO deals with optimizing your website's backend structure — speed, crawlability, indexing, security, and mobile performance." },
+            { "q": "How do you find technical issues?", "a": "We use professional tools like Screaming Frog, Ahrefs, Google Search Console, PageSpeed Insights, and custom scripts." },
+            { "q": "Can technical SEO fix ranking drops?", "a": "Often, yes. Many ranking drops are caused by technical issues like crawl errors, speed degradation, or indexing problems." },
+            { "q": "How often should a technical audit be done?", "a": "We recommend a full technical audit every quarter, with ongoing monitoring for critical issues." }
+          ],
+          "relatedServiceIds": ["on-page-seo", "off-page-seo"]
+        }
+      ]
+    },
+    {
+      "id": "gmb-services",
+      "label": "GMB Services",
+      "icon": "mdi:google-maps",
+      "folder": "gmb-services",
+      "services": [
+        {
+          "id": "gmb-setup-optimization",
+          "slug": "gmb-setup-optimization.html",
+          "title": "GMB Setup & Optimization",
+          "tagline": "Claim, verify, and fully optimize your Google Business Profile",
+          "icon": "mdi:store-check-outline",
+          "breadcrumb": ["Home", "GMB Services", "GMB Setup & Optimization"],
+          "overview": "Your Google Business Profile is often the first impression customers get of your business. Our GMB Setup & Optimization service ensures your profile is fully claimed, verified, and optimized with accurate information, compelling descriptions, strategic categories, high-quality photos, and service listings. We transform your GMB into a powerful lead generation tool that drives calls, visits, and conversions.",
+          "features": [
+            { "icon": "mdi:check-circle-outline", "title": "Profile Verification", "desc": "Complete claim and verification process handled on your behalf." },
+            { "icon": "mdi:text-box-outline", "title": "Business Description", "desc": "Keyword-rich, compelling description that highlights your unique value." },
+            { "icon": "mdi:shape-outline", "title": "Category Optimization", "desc": "Primary and secondary categories chosen for maximum local visibility." },
+            { "icon": "mdi:image-multiple-outline", "title": "Photo Optimization", "desc": "High-quality cover, logo, interior, and team photos uploaded and tagged." },
+            { "icon": "mdi:format-list-bulleted", "title": "Service & Product Listings", "desc": "All services and products listed with descriptions and pricing." },
+            { "icon": "mdi:clock-outline", "title": "Hours & Attributes", "desc": "Accurate business hours, special hours, and relevant attributes set." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:account-key-outline", "title": "Claim & Verify", "desc": "We claim your GMB listing and complete Google's verification process." },
+            { "step": "02", "icon": "mdi:pencil-outline", "title": "Profile Buildout", "desc": "Complete all sections — description, categories, services, photos, and attributes." },
+            { "step": "03", "icon": "mdi:magnify", "title": "Keyword Optimization", "desc": "Integrate target keywords naturally into your business description and services." },
+            { "step": "04", "icon": "mdi:monitor-eye", "title": "Review & Launch", "desc": "Final quality check and optimization before making the profile live." }
+          ],
+          "benefits": [
+            { "icon": "mdi:eye-outline", "title": "Instant Visibility", "desc": "Appear on Google Maps and local search results immediately after optimization." },
+            { "icon": "mdi:phone-incoming-outline", "title": "More Customer Actions", "desc": "Optimized profiles generate significantly more calls, visits, and website clicks." },
+            { "icon": "mdi:star-face", "title": "Professional Image", "desc": "A complete, polished profile builds trust and credibility with potential customers." }
+          ],
+          "faqs": [
+            { "q": "What if I don't have a GMB profile yet?", "a": "No problem! We'll create one from scratch, complete the verification, and fully optimize it." },
+            { "q": "How long does verification take?", "a": "Google verification typically takes 5–14 days depending on the method (postcard, phone, email, or instant)." },
+            { "q": "Can you optimize an existing GMB profile?", "a": "Absolutely. We audit your current profile, identify gaps, and optimize every section for better visibility." },
+            { "q": "Do I need a physical storefront?", "a": "No. Service-area businesses, home-based businesses, and professionals can all benefit from a GMB profile." }
+          ],
+          "relatedServiceIds": ["gmb-management", "gmb-review-management"]
+        },
+        {
+          "id": "gmb-management",
+          "slug": "gmb-management.html",
+          "title": "GMB Management",
+          "tagline": "Keep your Google Business Profile active, engaging, and ranking high",
+          "icon": "mdi:cog-refresh-outline",
+          "breadcrumb": ["Home", "GMB Services", "GMB Management"],
+          "overview": "A set-and-forget approach to GMB doesn't work. Our ongoing GMB Management service keeps your profile active and competitive with regular Google Posts, photo updates, Q&A management, attribute updates, and performance monitoring. We ensure your profile stays fresh, engaging, and optimized throughout the year, maintaining and improving your local search rankings month after month.",
+          "features": [
+            { "icon": "mdi:post-outline", "title": "Weekly Google Posts", "desc": "Regular posts about offers, events, updates, and tips to keep your profile active." },
+            { "icon": "mdi:camera-plus-outline", "title": "Photo Updates", "desc": "Fresh photos added regularly to showcase your business and build trust." },
+            { "icon": "mdi:frequently-asked-questions", "title": "Q&A Management", "desc": "Proactive Q&A seeding and prompt responses to customer questions." },
+            { "icon": "mdi:bell-ring-outline", "title": "Notification Monitoring", "desc": "Monitor and respond to edits, questions, and Google suggestions in real-time." },
+            { "icon": "mdi:chart-line-variant", "title": "Performance Analytics", "desc": "Monthly reports on views, searches, actions, and direction requests." },
+            { "icon": "mdi:tune-vertical", "title": "Attribute Updates", "desc": "Keep business attributes, hours, and special information current." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:clipboard-check-outline", "title": "Profile Audit", "desc": "Review current profile status, performance data, and competitive landscape." },
+            { "step": "02", "icon": "mdi:calendar-month-outline", "title": "Content Calendar", "desc": "Plan a monthly schedule for posts, photos, and promotional content." },
+            { "step": "03", "icon": "mdi:publish", "title": "Execute & Engage", "desc": "Publish content, manage Q&A, respond to reviews, and update info." },
+            { "step": "04", "icon": "mdi:chart-box-outline", "title": "Analyze & Optimize", "desc": "Review performance metrics and adjust strategy for continuous improvement." }
+          ],
+          "benefits": [
+            { "icon": "mdi:clock-check-outline", "title": "Save Time", "desc": "We handle all GMB tasks so you can focus on running your business." },
+            { "icon": "mdi:trending-up", "title": "Consistent Growth", "desc": "Regular activity signals relevance to Google, boosting your local rankings." },
+            { "icon": "mdi:handshake-outline", "title": "Better Engagement", "desc": "Active profiles build trust and encourage more customer interactions." }
+          ],
+          "faqs": [
+            { "q": "How often do you post on my GMB?", "a": "We publish 3–4 Google Posts per week, including offers, updates, tips, and event announcements." },
+            { "q": "Can I approve posts before they go live?", "a": "Yes, we can share a content calendar for your review and approval before publishing." },
+            { "q": "What if someone edits my listing?", "a": "We monitor for unauthorized edits and Google-suggested changes, reverting any incorrect modifications immediately." },
+            { "q": "Do you provide monthly reports?", "a": "Yes, detailed monthly reports covering views, search queries, customer actions, and ranking trends." }
+          ],
+          "relatedServiceIds": ["gmb-setup-optimization", "gmb-review-management"]
+        },
+        {
+          "id": "gmb-review-management",
+          "slug": "gmb-review-management.html",
+          "title": "Review Management",
+          "tagline": "Build a stellar online reputation with strategic review management",
+          "icon": "mdi:star-check-outline",
+          "breadcrumb": ["Home", "GMB Services", "Review Management"],
+          "overview": "Online reviews are the digital word-of-mouth that can make or break your business. Our Review Management service implements proven strategies to generate more positive reviews, craft professional responses to all feedback, handle negative reviews diplomatically, and build a review generation system that consistently strengthens your online reputation and improves your local search rankings.",
+          "features": [
+            { "icon": "mdi:email-send-outline", "title": "Review Generation Campaigns", "desc": "Automated and manual campaigns to request reviews from satisfied customers." },
+            { "icon": "mdi:reply-outline", "title": "Professional Responses", "desc": "Thoughtful, brand-aligned responses to every review within 24 hours." },
+            { "icon": "mdi:alert-circle-outline", "title": "Negative Review Handling", "desc": "Diplomatic resolution strategies to turn negative experiences positive." },
+            { "icon": "mdi:qrcode", "title": "Review Link & QR Codes", "desc": "Custom review links and QR codes for easy in-store and email sharing." },
+            { "icon": "mdi:chart-timeline-variant-shimmer", "title": "Reputation Monitoring", "desc": "Track review velocity, sentiment trends, and competitor comparisons." },
+            { "icon": "mdi:flag-outline", "title": "Fake Review Flagging", "desc": "Identify and report fake or spam reviews to protect your reputation." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:magnify-scan", "title": "Reputation Audit", "desc": "Analyze current review profile, ratings, sentiment, and competitor benchmarks." },
+            { "step": "02", "icon": "mdi:cog-outline", "title": "System Setup", "desc": "Create review generation workflows, links, QR codes, and response templates." },
+            { "step": "03", "icon": "mdi:message-reply-text-outline", "title": "Active Management", "desc": "Daily monitoring, responses, and campaign execution to grow your reviews." },
+            { "step": "04", "icon": "mdi:file-chart-outline", "title": "Report & Improve", "desc": "Monthly reputation reports with insights and strategy refinements." }
+          ],
+          "benefits": [
+            { "icon": "mdi:star-four-points-outline", "title": "Higher Star Rating", "desc": "Consistent positive reviews raise your average rating and build trust." },
+            { "icon": "mdi:account-heart-outline", "title": "Customer Trust", "desc": "92% of consumers read reviews before choosing a local business." },
+            { "icon": "mdi:google", "title": "Better Local Rankings", "desc": "Review quantity and quality are key Google Maps ranking factors." }
+          ],
+          "faqs": [
+            { "q": "Can you remove negative reviews?", "a": "We can't remove genuine reviews, but we can flag policy violations. We also help resolve issues and encourage updated reviews." },
+            { "q": "How do you generate more reviews?", "a": "Through email/SMS campaigns, review links, QR codes at your location, and post-service follow-up sequences." },
+            { "q": "How quickly do you respond to reviews?", "a": "We respond to all new reviews within 24 hours with personalized, professional replies." },
+            { "q": "Do reviews really affect rankings?", "a": "Yes. Google considers review quantity, quality, velocity, and keywords as local search ranking factors." }
+          ],
+          "relatedServiceIds": ["gmb-setup-optimization", "gmb-management"]
+        }
+      ]
+    },
+    {
+      "id": "graphic-design",
+      "label": "Graphic Design",
+      "icon": "mdi:palette",
+      "folder": "graphic-design",
+      "services": [
+        {
+          "id": "logo-design",
+          "slug": "logo-design.html",
+          "title": "Logo Design",
+          "tagline": "Distinctive logos that capture your brand's essence at a glance",
+          "icon": "mdi:shape-plus-outline",
+          "breadcrumb": ["Home", "Graphic Design", "Logo Design"],
+          "overview": "Your logo is the cornerstone of your brand identity. Our logo design service combines creative artistry with strategic thinking to craft logos that are memorable, versatile, and timeless. We research your industry, audience, and competitors to design a mark that communicates your values and stands out in any context — from business cards to billboards, digital screens to merchandise.",
+          "features": [
+            { "icon": "mdi:lightbulb-on-outline", "title": "Concept Development", "desc": "3–5 unique concepts explored based on your brief and brand strategy." },
+            { "icon": "mdi:vector-polygon", "title": "Vector Graphics", "desc": "Scalable vector logos that look crisp at any size, from favicon to billboard." },
+            { "icon": "mdi:palette-swatch-variant", "title": "Color Psychology", "desc": "Color palettes chosen based on brand personality and audience perception." },
+            { "icon": "mdi:format-font", "title": "Typography Selection", "desc": "Custom or licensed typefaces that complement your logo mark perfectly." },
+            { "icon": "mdi:file-multiple-outline", "title": "Complete File Package", "desc": "AI, EPS, SVG, PNG, JPG in all variations — full color, mono, reverse." },
+            { "icon": "mdi:notebook-outline", "title": "Brand Guidelines", "desc": "Usage guidelines for spacing, sizing, color codes, and do's/don'ts." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:clipboard-text-outline", "title": "Creative Brief", "desc": "Understand your brand values, audience, competitors, and style preferences." },
+            { "step": "02", "icon": "mdi:pencil-ruler", "title": "Concept Sketching", "desc": "Hand-sketch and digitize 3–5 unique logo concepts for your review." },
+            { "step": "03", "icon": "mdi:brush-variant", "title": "Refinement", "desc": "Develop the chosen concept with revisions until it's perfect." },
+            { "step": "04", "icon": "mdi:package-variant", "title": "Final Delivery", "desc": "Deliver all file formats with a comprehensive brand guidelines document." }
+          ],
+          "benefits": [
+            { "icon": "mdi:eye-outline", "title": "Instant Recognition", "desc": "A professional logo makes your brand immediately recognizable and memorable." },
+            { "icon": "mdi:handshake-outline", "title": "Build Trust", "desc": "Quality design signals professionalism and builds customer confidence." },
+            { "icon": "mdi:infinity", "title": "Timeless Design", "desc": "We create logos that stay relevant for years, not just months." }
+          ],
+          "faqs": [
+            { "q": "How many logo concepts will I receive?", "a": "You'll receive 3–5 unique concepts in the initial presentation, with unlimited revisions on the chosen direction." },
+            { "q": "What file formats are included?", "a": "You get AI, EPS, SVG, PNG (transparent), JPG in full color, monochrome, and reversed versions." },
+            { "q": "Can I trademark my logo?", "a": "Absolutely. All our logos are original creations with full commercial rights transferred to you upon delivery." },
+            { "q": "How long does the logo design process take?", "a": "Typically 7–14 business days from brief to final delivery, depending on revision rounds." }
+          ],
+          "relatedServiceIds": ["branding-identity", "social-media-design"]
+        },
+        {
+          "id": "branding-identity",
+          "slug": "branding-identity.html",
+          "title": "Branding & Identity",
+          "tagline": "Complete visual identity systems that make your brand unforgettable",
+          "icon": "mdi:bookmark-outline",
+          "breadcrumb": ["Home", "Graphic Design", "Branding & Identity"],
+          "overview": "A cohesive brand identity goes far beyond a logo. Our comprehensive branding service creates a complete visual language for your business — including color palettes, typography systems, imagery guidelines, stationery design, and brand collateral. We ensure every touchpoint communicates your brand's personality consistently, building recognition, trust, and emotional connection with your audience.",
+          "features": [
+            { "icon": "mdi:palette-outline", "title": "Color System", "desc": "Primary, secondary, and accent color palettes with HEX, RGB, and CMYK codes." },
+            { "icon": "mdi:format-text", "title": "Typography System", "desc": "Heading and body typeface selection with usage hierarchy and guidelines." },
+            { "icon": "mdi:card-account-details-outline", "title": "Stationery Design", "desc": "Business cards, letterheads, envelopes, and email signatures designed." },
+            { "icon": "mdi:image-area", "title": "Visual Language", "desc": "Photography style, illustration guidelines, and iconography standards." },
+            { "icon": "mdi:book-open-page-variant-outline", "title": "Brand Guidelines Book", "desc": "Comprehensive 20–30 page guide documenting all brand standards." },
+            { "icon": "mdi:content-copy", "title": "Brand Templates", "desc": "Editable templates for presentations, social posts, and documents." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:magnify", "title": "Brand Discovery", "desc": "Deep dive into your values, audience, market position, and aspirations." },
+            { "step": "02", "icon": "mdi:pencil-ruler", "title": "Visual Strategy", "desc": "Define the visual direction, mood boards, and design principles." },
+            { "step": "03", "icon": "mdi:brush-variant", "title": "Design & Develop", "desc": "Create all brand elements, collateral, and guideline documentation." },
+            { "step": "04", "icon": "mdi:package-variant", "title": "Handoff & Training", "desc": "Deliver all assets with team training on consistent brand application." }
+          ],
+          "benefits": [
+            { "icon": "mdi:puzzle-star-outline", "title": "Brand Consistency", "desc": "Every touchpoint looks and feels cohesive, reinforcing brand recognition." },
+            { "icon": "mdi:heart-outline", "title": "Emotional Connection", "desc": "A well-crafted identity creates deeper connections with your audience." },
+            { "icon": "mdi:domain", "title": "Market Differentiation", "desc": "Stand out from competitors with a unique, professional brand system." }
+          ],
+          "faqs": [
+            { "q": "What's included in a branding package?", "a": "Logo, color system, typography, stationery (business cards, letterhead), social media templates, and a brand guidelines book." },
+            { "q": "How is branding different from logo design?", "a": "A logo is one element; branding is the complete visual system — colors, fonts, imagery, templates, and usage guidelines." },
+            { "q": "Can you rebrand an existing business?", "a": "Yes, we handle full rebrands including strategy, design, and rollout planning to ensure a smooth transition." },
+            { "q": "How long does a branding project take?", "a": "Typically 3–6 weeks depending on the scope, number of deliverables, and revision rounds." }
+          ],
+          "relatedServiceIds": ["logo-design", "print-design"]
+        },
+        {
+          "id": "social-media-design",
+          "slug": "social-media-design.html",
+          "title": "Social Media Design",
+          "tagline": "Scroll-stopping social media visuals that drive engagement and growth",
+          "icon": "mdi:instagram",
+          "breadcrumb": ["Home", "Graphic Design", "Social Media Design"],
+          "overview": "In the attention economy, your social media visuals need to stop the scroll. Our social media design service creates thumb-stopping graphics for Instagram, Facebook, LinkedIn, YouTube, and other platforms. From daily posts and stories to carousel designs and highlight covers, we maintain your brand consistency while creating content that educates, entertains, and converts your social audience.",
+          "features": [
+            { "icon": "mdi:image-edit-outline", "title": "Post & Story Design", "desc": "Custom graphics for feed posts, stories, reels covers, and carousels." },
+            { "icon": "mdi:view-carousel-outline", "title": "Carousel Templates", "desc": "Multi-slide educational and promotional carousel designs." },
+            { "icon": "mdi:youtube", "title": "YouTube Assets", "desc": "Channel art, video thumbnails, and end screen graphics." },
+            { "icon": "mdi:calendar-text-outline", "title": "Content Calendar", "desc": "Planned visual content schedule aligned with your marketing goals." },
+            { "icon": "mdi:dots-circle", "title": "Highlight Covers", "desc": "Branded Instagram highlight covers for a polished profile appearance." },
+            { "icon": "mdi:animation-play-outline", "title": "Animated Posts", "desc": "Eye-catching motion graphics and animated social content." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:account-search-outline", "title": "Audience Research", "desc": "Understand your audience demographics, preferences, and content consumption." },
+            { "step": "02", "icon": "mdi:palette-outline", "title": "Template Design", "desc": "Create brand-consistent templates for various post types and platforms." },
+            { "step": "03", "icon": "mdi:brush-variant", "title": "Content Creation", "desc": "Design posts, stories, and carousels following the approved templates." },
+            { "step": "04", "icon": "mdi:chart-line-variant", "title": "Optimize & Iterate", "desc": "Analyze engagement data and refine visual strategy for better results." }
+          ],
+          "benefits": [
+            { "icon": "mdi:thumb-up-outline", "title": "Higher Engagement", "desc": "Professional visuals dramatically increase likes, shares, and comments." },
+            { "icon": "mdi:account-plus-outline", "title": "Follower Growth", "desc": "Consistent, attractive content attracts and retains more followers." },
+            { "icon": "mdi:brush-outline", "title": "Brand Consistency", "desc": "Every post reinforces your visual identity across all platforms." }
+          ],
+          "faqs": [
+            { "q": "How many designs do I get per month?", "a": "Plans range from 15 to 60+ designs per month, including posts, stories, and carousel slides." },
+            { "q": "Which platforms do you design for?", "a": "Instagram, Facebook, LinkedIn, Twitter/X, YouTube, Pinterest, and WhatsApp Status — all optimized for each platform's specs." },
+            { "q": "Can I request revisions?", "a": "Yes, each design includes up to 2 rounds of revisions to ensure your complete satisfaction." },
+            { "q": "Do you provide the editable source files?", "a": "Editable Canva or Figma templates are provided with premium plans for ongoing use." }
+          ],
+          "relatedServiceIds": ["logo-design", "branding-identity"]
+        },
+        {
+          "id": "print-design",
+          "slug": "print-design.html",
+          "title": "Print Design",
+          "tagline": "Premium print materials that leave a lasting physical impression",
+          "icon": "mdi:printer-outline",
+          "breadcrumb": ["Home", "Graphic Design", "Print Design"],
+          "overview": "In a digital world, print materials create a tangible connection with your audience. Our print design service covers everything from business cards, brochures, and flyers to banners, packaging, and signage. We combine stunning visual design with technical print expertise, ensuring your materials look perfect from screen to press. Every design is print-ready with proper bleeds, color modes, and resolution.",
+          "features": [
+            { "icon": "mdi:card-account-details-outline", "title": "Business Cards", "desc": "Premium business card designs with multiple finish options." },
+            { "icon": "mdi:bookshelf", "title": "Brochures & Catalogs", "desc": "Multi-page brochures, catalogs, and company profiles designed." },
+            { "icon": "mdi:billboard", "title": "Banners & Signage", "desc": "Roll-up banners, flex boards, and outdoor signage for maximum impact." },
+            { "icon": "mdi:card-text-outline", "title": "Flyers & Posters", "desc": "Attention-grabbing promotional flyers and event posters." },
+            { "icon": "mdi:package-variant-closed-plus", "title": "Packaging Design", "desc": "Product packaging that stands out on shelves and builds brand value." },
+            { "icon": "mdi:file-pdf-box", "title": "Print-Ready Files", "desc": "CMYK files with bleeds, crop marks, and correct resolution for press." }
+          ],
+          "process": [
+            { "step": "01", "icon": "mdi:clipboard-text-outline", "title": "Brief & Specs", "desc": "Gather design requirements, dimensions, content, and print specifications." },
+            { "step": "02", "icon": "mdi:pencil-ruler", "title": "Layout Design", "desc": "Create layouts with visual hierarchy, typography, and brand elements." },
+            { "step": "03", "icon": "mdi:check-circle-outline", "title": "Proof & Revise", "desc": "Share proofs for review with revisions until you're completely satisfied." },
+            { "step": "04", "icon": "mdi:printer-3d", "title": "Print-Ready Export", "desc": "Export final files in print-ready format with bleeds and color profiles." }
+          ],
+          "benefits": [
+            { "icon": "mdi:hand-wave-outline", "title": "Tangible Impact", "desc": "Physical materials create memorable, tactile brand experiences." },
+            { "icon": "mdi:check-decagram-outline", "title": "Professional Quality", "desc": "Print-perfect designs that reflect the quality of your business." },
+            { "icon": "mdi:target", "title": "Versatile Marketing", "desc": "Print complements digital campaigns for a complete marketing strategy." }
+          ],
+          "faqs": [
+            { "q": "What file formats do I receive?", "a": "Print-ready PDFs in CMYK, plus editable AI/PSD source files and web-optimized JPG/PNG versions." },
+            { "q": "Do you handle the printing too?", "a": "We don't print in-house, but we work with trusted print partners and can coordinate production for you." },
+            { "q": "What's the turnaround for print design?", "a": "Simple items like business cards take 2–3 days; complex brochures or packaging take 5–10 business days." },
+            { "q": "Can you match my existing brand colors?", "a": "Absolutely. We use your brand guidelines or Pantone/CMYK codes to ensure perfect color consistency." }
+          ],
+          "relatedServiceIds": ["branding-identity", "logo-design"]
+        }
+      ]
+    }
+  ]
+}
