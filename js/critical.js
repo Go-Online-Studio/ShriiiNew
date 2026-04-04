@@ -86,7 +86,7 @@
                  data-bs-toggle="dropdown" aria-expanded="false">Services</a>
               <div class="mega-menu dropdown-menu">
                 <div class="mega-menu-col">
-                  <h6><iconify-icon icon="mdi:monitor-code"></iconify-icon> Web Development</h6>
+                  <h6><iconify-icon icon="streamline:code-monitor-1-solid"></iconify-icon> Web Development</h6>
                   <a href="${BASE}services/web-development/wordpress-development.html">WordPress Development</a>
                   <a href="${BASE}services/web-development/custom-web-development.html">Custom Web Development</a>
                   <a href="${BASE}services/web-development/ecommerce-development.html">E-Commerce Development</a>
