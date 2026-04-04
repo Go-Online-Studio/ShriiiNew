@@ -29,18 +29,28 @@
   // ── Base Path Detection ──
   function getBasePath() {
     const path = window.location.pathname;
-    const segments = path.replace(/\/[^/]*$/, '').split('/').filter(Boolean);
-    // For local file:// protocol or root-level pages
+    const hostname = window.location.hostname;
+    
+    // Fallback for local file:// protocol
     if (window.location.protocol === 'file:') {
-      const htmlFile = path.split('/').pop();
-      // If file is in services/subfolder/ → need ../../
-      // Check by looking at the path structure
       const pathLower = path.toLowerCase();
       if (pathLower.includes('/services/')) return '../../';
       return './';
     }
-    // For server
-    const depth = path.replace(/\/[^/]*\.html?$/i, '').replace(/\/$/, '').split('/').filter(Boolean).length;
+
+    // Calculate segments to determine depth
+    let segments = path.replace(/\/[^/]*\.html?$/i, '').replace(/\/$/, '').split('/').filter(Boolean);
+    let depth = segments.length;
+
+    /**
+     * GITHUB PAGES SPECIAL CASE:
+     * If hosted on github.io, the first segment is the repository name (e.g., /ShriiiNew/).
+     * We don't count the repo name as a depth level because assets are inside it.
+     */
+    if (hostname.includes('github.io') && depth > 0) {
+      depth = Math.max(0, depth - 1);
+    }
+
     return depth > 0 ? '../'.repeat(depth) : './';
   }
 
