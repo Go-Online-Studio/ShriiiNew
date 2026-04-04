@@ -32,7 +32,7 @@ jobs:
         run: npm install -g sitemap-generator-cli
 
       - name: Generate Sitemap
-        run: sitemap-generator https://go-online-studio.github.io/ShriiiNew -o ./sitemap.xml
+        run: sitemap-generator https://go-online-studio.github.io/ShriiiNew -o ./sitemap.xml -l
 
       - name: Commit and Push Sitemap
         run: |
