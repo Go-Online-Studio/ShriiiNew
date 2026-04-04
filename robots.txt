@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://shriiitrackingsolution.in/sitemap.xml
+Sitemap: https://go-online-studio.github.io/ShriiiNew/sitemap.xml

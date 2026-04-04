@@ -305,3 +305,12 @@
   });
 
 })();
+
+
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top HomeNav" id="mainNavbar"></nav>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar"></nav>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel"></div>
