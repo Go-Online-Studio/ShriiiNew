@@ -1,0 +1,55 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  schedule:
+    - cron: '0 0 * * *' # Daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger from GitHub Actions
+
+jobs:
+  generate-and-push-sitemap:
+    runs-on: ubuntu-latest
+    
+    # Needs permissions to write back to the repo
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for all tags and branches (good for lastmod inference if supported)
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+
+      - name: Install sitemap generator
+        run: npm install -g sitemap-generator-cli
+
+      - name: Generate Sitemap
+        run: sitemap-generator https://go-online-studio.github.io/ShriiiNew -o ./sitemap.xml
+
+      - name: Commit and Push Sitemap
+        run: |
+          # 1. Configure Git user
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 2. Stage the sitemap
+          git add sitemap.xml
+          
+          # 3. Check for changes
+          if git diff --staged --quiet; then
+            echo "sitemap.xml is already up to date. No commit necessary."
+          else
+            # 4. Commit and push back to correct branch
+            echo "Changes detected in sitemap.xml. Committing and pushing..."
+            git commit -m "chore(seo): auto-update sitemap.xml"
+            # Push to the branch that triggered the action (e.g. main/master)
+            git push origin HEAD:${{ github.ref_name }}
+          fi
