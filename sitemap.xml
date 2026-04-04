@@ -1,24 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/</loc>
+    <loc>https://go-online-studio.github.io/ShriiiNew/about.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/career.html</loc>
+    <lastmod>2026-04-04</lastmod>
   </url>
   <url>
     <loc>https://go-online-studio.github.io/ShriiiNew/contact.html</loc>
+    <lastmod>2026-04-04</lastmod>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/local-seo.html</loc>
+    <loc>https://go-online-studio.github.io/ShriiiNew/</loc>
+    <lastmod>2026-04-04</lastmod>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/wordpress-development.html</loc>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/gmb-services/gmb-management.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/gmb-services/gmb-review-management.html</loc>
+    <lastmod>2026-04-04</lastmod>
   </url>
   <url>
     <loc>https://go-online-studio.github.io/ShriiiNew/services/gmb-services/gmb-setup-optimization.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/graphic-design/branding-identity.html</loc>
+    <lastmod>2026-04-04</lastmod>
   </url>
   <url>
     <loc>https://go-online-studio.github.io/ShriiiNew/services/graphic-design/logo-design.html</loc>
+    <lastmod>2026-04-04</lastmod>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/index.html</loc>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/graphic-design/print-design.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/graphic-design/social-media-design.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/local-seo.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/off-page-seo.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/on-page-seo.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/technical-seo.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/custom-web-development.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/ecommerce-development.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/landing-page-design.html</loc>
+    <lastmod>2026-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/wordpress-development.html</loc>
+    <lastmod>2026-04-04</lastmod>
   </url>
 </urlset>
