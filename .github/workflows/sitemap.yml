@@ -21,18 +21,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Fetch all history for all tags and branches (good for lastmod inference if supported)
+          fetch-depth: 0 # Required to get git history for lastmod dates
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
 
-      - name: Install sitemap generator
-        run: npm install -g sitemap-generator-cli
-
       - name: Generate Sitemap
-        run: sitemap-generator https://go-online-studio.github.io/ShriiiNew -o ./sitemap.xml -l
+        run: node generate-sitemap.js
 
       - name: Commit and Push Sitemap
         run: |
