@@ -13,12 +13,29 @@
 
   // ── Step 2: Base path ──
   function getBasePath() {
+    const path = window.location.pathname;
+    const hostname = window.location.hostname;
+    
+    // Fallback for local file:// protocol
     if (window.location.protocol === 'file:') {
-      var p = window.location.pathname.toLowerCase();
-      if (p.includes('/services/')) return '../../';
+      const pathLower = path.toLowerCase();
+      if (pathLower.includes('/services/')) return '../../';
       return './';
     }
-    var depth = window.location.pathname.replace(/\/[^/]*\.html?$/i, '').replace(/\/$/, '').split('/').filter(Boolean).length;
+
+    // Calculate segments to determine depth
+    let segments = path.replace(/\/[^/]*\.html?$/i, '').replace(/\/$/, '').split('/').filter(Boolean);
+    let depth = segments.length;
+
+    /**
+     * GITHUB PAGES SPECIAL CASE:
+     * If hosted on github.io, the first segment is the repository name (e.g., /ShriiiNew/).
+     * We don't count the repo name as a depth level because assets are inside it.
+     */
+    if (hostname.includes('github.io') && depth > 0) {
+      depth = Math.max(0, depth - 1);
+    }
+
     return depth > 0 ? '../'.repeat(depth) : './';
   }
   var BASE = getBasePath();
@@ -75,9 +92,14 @@
         }
         highlights += '</ul>';
       }
+      var overviewImageHtml = '<div class="overview-decoration"></div>';
+      if (service.overviewImage) {
+        overviewImageHtml = '<div class="story-decoration"><img src="' + service.overviewImage.src + '" alt="' + service.overviewImage.alt + '"></div>';
+      }
+
       ovEl.innerHTML = '<div class="container"><div class="row align-items-center g-5">' +
         '<div class="col-lg-6" data-aos="fade-right"><h2 class="mb-3">Overview</h2><p style="color:var(--text-muted)">' + service.overview + '</p>' + highlights + '</div>' +
-        '<div class="col-lg-6" data-aos="fade-left"><div class="overview-decoration"></div></div>' +
+        '<div class="col-lg-6" data-aos="fade-left">' + overviewImageHtml + '</div>' +
         '</div></div>';
     }
 

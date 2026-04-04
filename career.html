@@ -12,175 +12,763 @@
   <link rel="preload" as="style" href="css/style.css" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" as="style" href="css/responsive.css" onload="this.onload=null;this.rel='stylesheet'">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Shriii Tracking Solution","url":"https://shriiitrackingsolution.in/","telephone":["+916354710794","+917990909711"],"email":"contact@shriiitrackingsolutions.com","address":{"@type":"PostalAddress","streetAddress":"TF-A1-22, Akshar Pavilion Mall, Near Priya Cinema, Vasna Bhyali Main Road","addressLocality":"Vadodara","postalCode":"391410","addressCountry":"IN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}}</script>
+
+  <style>
+    /* ── Career Page Custom Styles ── */
+
+    /* ─ Hero ─ */
+    .career-hero {
+      min-height: 420px;
+      padding-top: calc(var(--nav-height) + 3.5rem);
+      padding-bottom: 3.5rem;
+      background: linear-gradient(135deg, #1a0540 0%, #310a6e 60%, #0d0221 100%);
+      position: relative; overflow: hidden;
+      display: flex; align-items: center;
+    }
+    .career-hero::before {
+      content: '';
+      position: absolute; top: -50%; right: -10%;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(176,122,255,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .career-hero::after {
+      content: '';
+      position: absolute; bottom: -30%; left: -5%;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(49,10,110,0.3) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .career-hero h1 { color: #fff; font-weight: 800; margin-bottom: 0.6rem; }
+    .career-hero .tagline { color: var(--accent-bright); font-size: 1.15rem; opacity: 0.9; }
+    .career-hero .hero-pill {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(176,122,255,0.15);
+      border: 1px solid rgba(176,122,255,0.3);
+      border-radius: 50px; padding: 0.4rem 1.1rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent-bright);
+      margin-bottom: 1.2rem; text-transform: uppercase; letter-spacing: 1px;
+    }
+    .career-hero .hero-pill iconify-icon { font-size: 1rem; }
+    .career-hero-shapes .shape {
+      position: absolute; border-radius: 50%;
+      border: 1px solid rgba(176,122,255,0.12);
+      pointer-events: none; animation: rotateShape 20s linear infinite;
+    }
+    .career-hero-shapes .shape:nth-child(1) { width: 300px; height: 300px; top: 10%; right: 5%; animation-duration: 25s; }
+    .career-hero-shapes .shape:nth-child(2) { width: 180px; height: 180px; top: 50%; right: 15%; animation-direction: reverse; animation-duration: 18s; }
+    @keyframes rotateShape { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ─ Environment Section ─ */
+    .env-section { background: var(--body-bg); }
+    .env-images-col {
+      position: relative;
+      min-height: 420px;
+    }
+    .env-img-main, .env-img-secondary {
+      border-radius: 20px;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 0 20px 60px rgba(49,10,110,0.15);
+    }
+    .env-img-main {
+      width: 75%; aspect-ratio: 4/3;
+      top: 0; left: 0;
+      border: 3px solid rgba(176,122,255,0.2);
+    }
+    .env-img-secondary {
+      width: 55%; aspect-ratio: 1/1;
+      bottom: 0; right: 0;
+      border: 3px solid rgba(196,155,255,0.2);
+      z-index: 2;
+    }
+    .env-img-main img, .env-img-secondary img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .env-img-main:hover img, .env-img-secondary:hover img { transform: scale(1.04); }
+    .env-badge {
+      position: absolute; top: -1rem; right: 1rem;
+      background: var(--accent-secondary); color: #fff;
+      border-radius: 50px; padding: 0.5rem 1.2rem;
+      font-size: 0.82rem; font-weight: 700;
+      z-index: 3;
+      box-shadow: 0 8px 24px rgba(139,92,246,0.4);
+    }
+
+    .env-feature {
+      display: flex; align-items: flex-start; gap: 1rem;
+      padding: 1.2rem;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+    .env-feature:hover {
+      background: rgba(176,122,255,0.06);
+      border-color: var(--border);
+      transform: translateX(4px);
+    }
+    .env-feature-icon {
+      width: 52px; height: 52px; min-width: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(176,122,255,0.15), rgba(49,10,110,0.08));
+      border: 1px solid rgba(176,122,255,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; color: var(--accent-secondary);
+      transition: all 0.3s;
+    }
+    .env-feature:hover .env-feature-icon {
+      background: var(--accent-secondary);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(139,92,246,0.3);
+    }
+    .env-feature h5 { font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem; }
+    .env-feature p { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
+
+    /* ─ Job Cards ─ */
+    .jobs-section { background: rgba(176,122,255,0.03); }
+    .job-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 1.8rem;
+      height: 100%;
+      display: flex; flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative; overflow: hidden;
+    }
+    .job-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .job-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(49,10,110,0.12);
+      border-color: rgba(176,122,255,0.3);
+    }
+    .job-card:hover::before { transform: scaleX(1); }
+    .job-dept-badge {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      background: rgba(176,122,255,0.1);
+      color: var(--accent-secondary);
+      border-radius: 50px; padding: 0.3rem 0.9rem;
+      font-size: 0.78rem; font-weight: 700;
+      margin-bottom: 1rem; width: fit-content;
+      border: 1px solid rgba(176,122,255,0.2);
+    }
+    .job-card h4 { font-weight: 800; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .job-card .job-meta {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .job-card .job-meta-item {
+      display: flex; align-items: center; gap: 0.3rem;
+      color: var(--text-muted); font-size: 0.84rem;
+    }
+    .job-card .job-meta-item iconify-icon { color: var(--accent-secondary); font-size: 1rem; }
+    .job-card .job-desc {
+      color: var(--text-muted); font-size: 0.9rem;
+      line-height: 1.6; flex-grow: 1; margin-bottom: 1.4rem;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .job-skills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.4rem; }
+    .job-skill-tag {
+      background: var(--body-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px; padding: 0.25rem 0.7rem;
+      font-size: 0.78rem; font-weight: 500; color: var(--text-muted);
+    }
+    .btn-apply-card {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: transparent;
+      color: var(--primary); border: 2px solid var(--primary);
+      border-radius: 50px; padding: 0.55rem 1.4rem;
+      font-weight: 700; font-size: 0.9rem;
+      transition: all 0.3s; cursor: pointer;
+      width: fit-content;
+    }
+    .btn-apply-card:hover {
+      background: var(--primary); color: #fff;
+      box-shadow: 0 8px 24px rgba(49,10,110,0.25);
+      transform: translateY(-1px);
+    }
+    .btn-apply-card iconify-icon { font-size: 1.1rem; transition: transform 0.3s; }
+    .btn-apply-card:hover iconify-icon { transform: translateX(3px); }
+
+    /* ─ Life Grid ─ */
+    .life-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 220px 220px; gap: 1.2rem; }
+    .life-grid-item {
+      border-radius: 20px; overflow: hidden;
+      position: relative; cursor: pointer;
+      background: linear-gradient(135deg, rgba(176,122,255,0.15), rgba(49,10,110,0.1));
+    }
+    .life-grid-item.tall { grid-row: span 2; }
+    .life-grid-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .life-grid-item:hover img { transform: scale(1.08); }
+    .life-grid-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 1.2rem;
+      background: linear-gradient(to top, rgba(20,5,60,0.85) 0%, transparent 100%);
+      color: #fff;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+    .life-grid-item:hover .life-grid-caption { transform: translateY(0); }
+    .life-grid-caption span { font-weight: 700; font-size: 0.95rem; }
+
+    /* ─ Apply Modal ─ */
+    .career-modal .modal-content {
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .career-modal .modal-header {
+      background: linear-gradient(135deg, var(--primary), var(--dark));
+      border-bottom: none; padding: 1.8rem 2rem;
+    }
+    .career-modal .modal-title { color: #fff; font-weight: 800; font-size: 1.3rem; }
+    .career-modal .modal-title .position-chip {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50px; padding: 0.25rem 0.9rem;
+      font-size: 0.82rem; font-weight: 600; font-family: 'Plus Jakarta Sans', sans-serif;
+      margin-left: 0.5rem; vertical-align: middle;
+    }
+    .career-modal .btn-close { filter: invert(1) brightness(2); opacity: 0.8; }
+    .career-modal .modal-body { padding: 2rem; }
+
+    /* Floating label inputs */
+    .floating-group { position: relative; margin-bottom: 1.2rem; }
+    .floating-group .float-input,
+    .floating-group .float-textarea {
+      width: 100%; border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 1.4rem 1rem 0.5rem;
+      font-size: 0.95rem; background: var(--body-bg);
+      color: var(--text-main); transition: border-color 0.2s, box-shadow 0.2s;
+      font-family: inherit; outline: none;
+    }
+    .floating-group .float-input:focus,
+    .floating-group .float-textarea:focus {
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 0 3px rgba(176,122,255,0.15);
+    }
+    .floating-group .float-input.is-invalid,
+    .floating-group .float-textarea.is-invalid {
+      border-color: #dc3545;
+      box-shadow: 0 0 0 3px rgba(220,53,69,0.12);
+    }
+    .floating-group label {
+      position: absolute; top: 50%; left: 1rem;
+      transform: translateY(-50%);
+      font-size: 0.9rem; color: var(--text-muted);
+      font-weight: 500; pointer-events: none;
+      transition: all 0.2s ease;
+    }
+    .floating-group.has-value label,
+    .floating-group .float-input:focus + label,
+    .floating-group .float-textarea:focus + label {
+      top: 0.6rem; transform: none;
+      font-size: 0.72rem; color: var(--accent-secondary);
+      font-weight: 700;
+    }
+    .floating-group.textarea label { top: 1rem; transform: none; }
+    .floating-group.has-value.textarea label { top: 0.45rem; }
+    .floating-group .float-textarea { resize: none; }
+    .floating-group .invalid-hint {
+      font-size: 0.78rem; color: #dc3545;
+      margin-top: 0.3rem; display: none; padding-left: 0.3rem;
+    }
+    .floating-group .float-input.is-invalid ~ .invalid-hint,
+    .floating-group .float-textarea.is-invalid ~ .invalid-hint { display: block; }
+
+    .btn-whatsapp-submit {
+      background: #25d366; color: #fff; border: none;
+      border-radius: 50px; padding: 0.85rem 2rem;
+      font-weight: 700; font-size: 1rem; width: 100%;
+      display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+      transition: all 0.3s; cursor: pointer;
+    }
+    .btn-whatsapp-submit:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(37,211,102,0.35);
+    }
+    .btn-whatsapp-submit iconify-icon { font-size: 1.4rem; }
+
+    /* Success toast */
+    .career-toast {
+      position: fixed; top: 1.5rem; right: 1.5rem; z-index: 9999;
+      background: #fff; border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+      display: flex; align-items: center; gap: 0.8rem;
+      max-width: 380px;
+      border-left: 4px solid #25d366;
+      transform: translateX(120%);
+      transition: transform 0.4s ease;
+    }
+    .career-toast.show { transform: translateX(0); }
+    .career-toast iconify-icon { font-size: 1.8rem; color: #25d366; }
+    .career-toast .toast-title { font-weight: 700; font-size: 0.95rem; }
+    .career-toast .toast-msg { font-size: 0.82rem; color: var(--text-muted); }
+
+    /* ─ CTA Section ─ */
+    .career-cta {
+      background: linear-gradient(135deg, var(--primary), var(--dark));
+      padding: clamp(70px, 9vw, 110px) 0;
+      position: relative; overflow: hidden;
+    }
+    .career-cta::before {
+      content: '';
+      position: absolute; top: -50%; left: -20%;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(176,122,255,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .career-cta h2 { color: #fff; font-weight: 800; margin-bottom: 0.5rem; }
+    .career-cta p { color: rgba(255,255,255,0.75); margin-bottom: 2rem; }
+    .btn-cta-whatsapp {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: #25d366; color: #fff; border: none;
+      border-radius: 50px; padding: 0.9rem 2.2rem;
+      font-weight: 700; font-size: 1.05rem;
+      text-decoration: none;
+      transition: all 0.3s; cursor: pointer;
+    }
+    .btn-cta-whatsapp:hover {
+      background: #1da851; color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(37,211,102,0.35);
+    }
+    .btn-cta-email {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: rgba(255,255,255,0.12);
+      color: #fff; border: 1.5px solid rgba(255,255,255,0.3);
+      border-radius: 50px; padding: 0.9rem 2.2rem;
+      font-weight: 700; font-size: 1.05rem;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .btn-cta-email:hover {
+      background: rgba(255,255,255,0.2); color: #fff;
+      transform: translateY(-3px);
+    }
+
+    /* ─ Responsiveness ─ */
+    @media (max-width: 991px) {
+      .env-images-col { min-height: 350px; margin-bottom: 3rem; }
+      .env-img-main { width: 70%; }
+      .env-img-secondary { width: 50%; }
+      .life-grid { grid-template-columns: repeat(3, 1fr); grid-template-rows: 180px 180px; }
+    }
+    @media (max-width: 767px) {
+      .career-hero { min-height: 340px; }
+      .env-images-col { min-height: 280px; margin-bottom: 2rem; }
+      .env-img-main { width: 80%; }
+      .env-img-secondary { width: 60%; }
+      .life-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 160px 160px; }
+      .life-grid-item.tall { grid-row: span 1; }
+    }
+    @media (max-width: 575px) {
+      .life-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .life-grid-item { height: 200px; }
+      .life-grid-item.tall { height: 200px; }
+    }
+  </style>
 </head>
 <body>
   <div class="custom-cursor"></div>
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar"></nav>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel"></div>
 
-  <!-- Inner Hero -->
-  <section class="inner-hero">
-    <div class="container"><div class="row align-items-center"><div class="col-lg-8" data-aos="fade-up">
-      <h1>Join Our Team</h1>
-      <p class="tagline">Build your career at Vadodara's fastest-growing digital agency.</p>
-    </div></div></div>
+  <!-- ══ HERO ══ -->
+  <section class="career-hero">
+    <div class="career-hero-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:2">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="hero-pill">
+            <iconify-icon icon="mdi:briefcase-outline"></iconify-icon>
+            We're Hiring
+          </div>
+          <h1>Join Our Creative<br>Team in Vadodara</h1>
+          <p class="tagline">Build your future at Vadodara's fastest-growing digital agency.<br>Real work. Real impact. Real growth.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <div class="breadcrumb-bar"><div class="container"><ul class="breadcrumb-custom">
-    <li><a href="./index.html">Home</a></li>
-    <li><iconify-icon icon="mdi:chevron-right"></iconify-icon></li>
-    <li class="current">Career</li>
-  </ul></div></div>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <ul class="breadcrumb-custom">
+        <li><a href="./index.html">Home</a></li>
+        <li><iconify-icon icon="mdi:chevron-right"></iconify-icon></li>
+        <li class="current">Career</li>
+      </ul>
+    </div>
+  </div>
 
-  <!-- Culture & Perks -->
+  <!-- ══ ENVIRONMENT SECTION ══ -->
+  <section class="env-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Left: Images -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="env-images-col">
+            <div class="env-img-main">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Shriii office team collaboration">
+            </div>
+            <div class="env-img-secondary">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="Young creative team">
+            </div>
+            <div class="env-badge">15+ Team Members</div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="section-heading">
+            <h2>Environment Full of <span class="gradient-text">New Ideas</span></h2>
+            <p>We've built a space where creativity thrives, ideas are celebrated, and every team member has the freedom to grow. Working at Shriii means collaborating with passionate individuals who love what they do.</p>
+          </div>
+
+          <div class="d-flex flex-column gap-2">
+            <div class="env-feature" data-aos="fade-up" data-aos-delay="100">
+              <div class="env-feature-icon">
+                <iconify-icon icon="mdi:sofa-outline"></iconify-icon>
+              </div>
+              <div>
+                <h5>Comfort Office</h5>
+                <p>A thoughtfully designed workspace that promotes focus, creativity, and collaboration — every day feels inspiring.</p>
+              </div>
+            </div>
+            <div class="env-feature" data-aos="fade-up" data-aos-delay="200">
+              <div class="env-feature-icon">
+                <iconify-icon icon="mdi:lightning-bolt-outline"></iconify-icon>
+              </div>
+              <div>
+                <h5>Young & Creative Team</h5>
+                <p>Work alongside energetic, talented peers who push boundaries, share knowledge, and celebrate wins together.</p>
+              </div>
+            </div>
+            <div class="env-feature" data-aos="fade-up" data-aos-delay="300">
+              <div class="env-feature-icon">
+                <iconify-icon icon="mdi:gamepad-variant-outline"></iconify-icon>
+              </div>
+              <div>
+                <h5>Games & Entertainment</h5>
+                <p>We believe fun fuels productivity. Enjoy team events, game sessions, and a culture that keeps work exciting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ JOB CARDS ══ -->
+  <section class="jobs-section">
+    <div class="container">
+      <div class="section-heading text-center" data-aos="fade-up">
+        <h2>Join Our <span class="gradient-text">Team</span></h2>
+        <p>Explore open roles and find where your passion meets our mission.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Job Card 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="job-card">
+            <div class="job-dept-badge">
+              <iconify-icon icon="mdi:magnify"></iconify-icon> SEO
+            </div>
+            <h4>SEO Executive</h4>
+            <div class="job-meta">
+              <span class="job-meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span>
+              <span class="job-meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span>
+            </div>
+            <p class="job-desc">Manage on-page, off-page, and local SEO campaigns for our diverse client portfolio and drive measurable organic growth.</p>
+            <div class="job-skills">
+              <span class="job-skill-tag">On-Page SEO</span>
+              <span class="job-skill-tag">Link Building</span>
+              <span class="job-skill-tag">GSC</span>
+              <span class="job-skill-tag">Ahrefs</span>
+            </div>
+            <button class="btn-apply-card" data-position="SEO Executive" onclick="openApplyModal(this)">
+              Apply Now <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job Card 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="job-card">
+            <div class="job-dept-badge">
+              <iconify-icon icon="mdi:code-tags"></iconify-icon> Web Dev
+            </div>
+            <h4>Web Developer</h4>
+            <div class="job-meta">
+              <span class="job-meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span>
+              <span class="job-meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span>
+            </div>
+            <p class="job-desc">Build stunning WordPress websites, custom web solutions, and e-commerce stores for clients across diverse industries.</p>
+            <div class="job-skills">
+              <span class="job-skill-tag">WordPress</span>
+              <span class="job-skill-tag">HTML/CSS</span>
+              <span class="job-skill-tag">PHP</span>
+              <span class="job-skill-tag">WooCommerce</span>
+            </div>
+            <button class="btn-apply-card" data-position="Web Developer" onclick="openApplyModal(this)">
+              Apply Now <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job Card 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="job-card">
+            <div class="job-dept-badge">
+              <iconify-icon icon="mdi:palette-outline"></iconify-icon> Design
+            </div>
+            <h4>Graphic Designer</h4>
+            <div class="job-meta">
+              <span class="job-meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span>
+              <span class="job-meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span>
+            </div>
+            <p class="job-desc">Create visually compelling designs — logos, social media graphics, branding collateral, and print materials for diverse clients.</p>
+            <div class="job-skills">
+              <span class="job-skill-tag">Figma</span>
+              <span class="job-skill-tag">Illustrator</span>
+              <span class="job-skill-tag">Photoshop</span>
+              <span class="job-skill-tag">Canva</span>
+            </div>
+            <button class="btn-apply-card" data-position="Graphic Designer" onclick="openApplyModal(this)">
+              Apply Now <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job Card 4 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="job-card">
+            <div class="job-dept-badge">
+              <iconify-icon icon="mdi:bullhorn-outline"></iconify-icon> Marketing
+            </div>
+            <h4>Digital Marketing Executive</h4>
+            <div class="job-meta">
+              <span class="job-meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span>
+              <span class="job-meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span>
+            </div>
+            <p class="job-desc">Plan and execute digital advertising campaigns across Meta, Google Ads, and social platforms to drive client growth.</p>
+            <div class="job-skills">
+              <span class="job-skill-tag">Meta Ads</span>
+              <span class="job-skill-tag">Google Ads</span>
+              <span class="job-skill-tag">Social Media</span>
+              <span class="job-skill-tag">Copywriting</span>
+            </div>
+            <button class="btn-apply-card" data-position="Digital Marketing Executive" onclick="openApplyModal(this)">
+              Apply Now <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job Card 5 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="job-card">
+            <div class="job-dept-badge">
+              <iconify-icon icon="mdi:handshake-outline"></iconify-icon> Sales
+            </div>
+            <h4>Business Development Executive</h4>
+            <div class="job-meta">
+              <span class="job-meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span>
+              <span class="job-meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span>
+            </div>
+            <p class="job-desc">Drive new business through lead generation, client outreach, proposal creation, and relationship management.</p>
+            <div class="job-skills">
+              <span class="job-skill-tag">Lead Generation</span>
+              <span class="job-skill-tag">CRM</span>
+              <span class="job-skill-tag">Communication</span>
+              <span class="job-skill-tag">Proposals</span>
+            </div>
+            <button class="btn-apply-card" data-position="Business Development Executive" onclick="openApplyModal(this)">
+              Apply Now <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job Card 6 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="job-card">
+            <div class="job-dept-badge">
+              <iconify-icon icon="mdi:google-maps"></iconify-icon> GMB
+            </div>
+            <h4>GMB Specialist</h4>
+            <div class="job-meta">
+              <span class="job-meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span>
+              <span class="job-meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span>
+            </div>
+            <p class="job-desc">Manage and optimize Google Business Profiles for clients — handling posts, reviews, Q&A, and performance analytics.</p>
+            <div class="job-skills">
+              <span class="job-skill-tag">GMB Optimization</span>
+              <span class="job-skill-tag">Local SEO</span>
+              <span class="job-skill-tag">Review Mgmt</span>
+            </div>
+            <button class="btn-apply-card" data-position="GMB Specialist" onclick="openApplyModal(this)">
+              Apply Now <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ LIFE AT SHRIII ══ -->
   <section>
     <div class="container">
       <div class="section-heading text-center" data-aos="fade-up">
-        <h2>Why Work <span class="gradient-text">With Us</span></h2>
-        <p>A culture that values growth, creativity, and collaboration.</p>
+        <h2>Life at <span class="gradient-text">Shriii</span></h2>
+        <p>A glimpse into our vibrant, creative, and fun workplace.</p>
       </div>
-      <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up" data-aos-delay="100">
-        <span class="perk-chip"><iconify-icon icon="mdi:clock-outline"></iconify-icon> Flexible Hours</span>
-        <span class="perk-chip"><iconify-icon icon="mdi:trending-up"></iconify-icon> Growth-Oriented</span>
-        <span class="perk-chip"><iconify-icon icon="mdi:account-group"></iconify-icon> Collaborative</span>
-        <span class="perk-chip"><iconify-icon icon="mdi:school-outline"></iconify-icon> Skill Development</span>
-        <span class="perk-chip"><iconify-icon icon="mdi:cash-multiple"></iconify-icon> Performance Bonuses</span>
-        <span class="perk-chip"><iconify-icon icon="mdi:emoticon-happy-outline"></iconify-icon> Fun Culture</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Open Positions -->
-  <section style="background:rgba(176,122,255,0.03)">
-    <div class="container">
-      <div class="section-heading text-center" data-aos="fade-up">
-        <h2>Open <span class="gradient-text">Positions</span></h2>
-        <p>Find the role that fits your passion and expertise.</p>
-      </div>
-      <div class="row justify-content-center"><div class="col-lg-9">
-        <div class="accordion position-accordion" id="positionsAcc">
-
-          <!-- Position 1 -->
-          <div class="accordion-item" data-aos="fade-up">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pos1">
-              <div><span class="position-title">SEO Executive</span>
-              <div class="position-meta"><span class="badge-dept">SEO</span><span class="meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span><span class="meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span></div></div>
-            </button></h2>
-            <div id="pos1" class="accordion-collapse collapse" data-bs-parent="#positionsAcc"><div class="accordion-body">
-              <p style="color:var(--text-muted);margin-bottom:1rem">We're looking for an experienced SEO Executive to manage on-page, off-page, and local SEO campaigns for our diverse client portfolio.</p>
-              <p style="font-weight:600;margin-bottom:0.5rem">Skills Required:</p>
-              <div class="skills-list"><span class="skill-tag">On-Page SEO</span><span class="skill-tag">Link Building</span><span class="skill-tag">Google Search Console</span><span class="skill-tag">Ahrefs</span></div>
-              <button class="btn btn-primary-main apply-btn" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="SEO Executive">Apply Now →</button>
-            </div></div>
-          </div>
-
-          <!-- Position 2 -->
-          <div class="accordion-item" data-aos="fade-up" data-aos-delay="50">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pos2">
-              <div><span class="position-title">Web Developer</span>
-              <div class="position-meta"><span class="badge-dept">Web Dev</span><span class="meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span><span class="meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span></div></div>
-            </button></h2>
-            <div id="pos2" class="accordion-collapse collapse" data-bs-parent="#positionsAcc"><div class="accordion-body">
-              <p style="color:var(--text-muted);margin-bottom:1rem">Join our dev team to build stunning WordPress websites, custom web solutions, and e-commerce stores for clients across industries.</p>
-              <p style="font-weight:600;margin-bottom:0.5rem">Skills Required:</p>
-              <div class="skills-list"><span class="skill-tag">WordPress</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">PHP</span><span class="skill-tag">WooCommerce</span></div>
-              <button class="btn btn-primary-main apply-btn" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Web Developer">Apply Now →</button>
-            </div></div>
-          </div>
-
-          <!-- Position 3 -->
-          <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pos3">
-              <div><span class="position-title">Graphic Designer</span>
-              <div class="position-meta"><span class="badge-dept">Design</span><span class="meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span><span class="meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span></div></div>
-            </button></h2>
-            <div id="pos3" class="accordion-collapse collapse" data-bs-parent="#positionsAcc"><div class="accordion-body">
-              <p style="color:var(--text-muted);margin-bottom:1rem">Create visually compelling designs — logos, social media graphics, branding collateral, and print materials for diverse clients.</p>
-              <p style="font-weight:600;margin-bottom:0.5rem">Skills Required:</p>
-              <div class="skills-list"><span class="skill-tag">Figma</span><span class="skill-tag">Adobe Illustrator</span><span class="skill-tag">Photoshop</span><span class="skill-tag">Canva</span></div>
-              <button class="btn btn-primary-main apply-btn" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Graphic Designer">Apply Now →</button>
-            </div></div>
-          </div>
-
-          <!-- Position 4 -->
-          <div class="accordion-item" data-aos="fade-up" data-aos-delay="150">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pos4">
-              <div><span class="position-title">Digital Marketing Executive</span>
-              <div class="position-meta"><span class="badge-dept">Marketing</span><span class="meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span><span class="meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span></div></div>
-            </button></h2>
-            <div id="pos4" class="accordion-collapse collapse" data-bs-parent="#positionsAcc"><div class="accordion-body">
-              <p style="color:var(--text-muted);margin-bottom:1rem">Plan and execute digital advertising campaigns across Meta, Google Ads, and social media platforms to drive client growth.</p>
-              <p style="font-weight:600;margin-bottom:0.5rem">Skills Required:</p>
-              <div class="skills-list"><span class="skill-tag">Meta Ads</span><span class="skill-tag">Google Ads</span><span class="skill-tag">Social Media</span><span class="skill-tag">Copywriting</span></div>
-              <button class="btn btn-primary-main apply-btn" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Digital Marketing Executive">Apply Now →</button>
-            </div></div>
-          </div>
-
-          <!-- Position 5 -->
-          <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pos5">
-              <div><span class="position-title">Business Development Executive</span>
-              <div class="position-meta"><span class="badge-dept">Sales</span><span class="meta-item"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon> Vadodara</span><span class="meta-item"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon> Full-Time</span></div></div>
-            </button></h2>
-            <div id="pos5" class="accordion-collapse collapse" data-bs-parent="#positionsAcc"><div class="accordion-body">
-              <p style="color:var(--text-muted);margin-bottom:1rem">Drive new business through lead generation, client outreach, proposal creation, and relationship management.</p>
-              <p style="font-weight:600;margin-bottom:0.5rem">Skills Required:</p>
-              <div class="skills-list"><span class="skill-tag">Lead Generation</span><span class="skill-tag">Client Communication</span><span class="skill-tag">CRM</span><span class="skill-tag">Proposal Writing</span></div>
-              <button class="btn btn-primary-main apply-btn" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Business Development Executive">Apply Now →</button>
-            </div></div>
-          </div>
-
+      <div class="life-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="life-grid-item tall">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Life at Shriii office">
+          <div class="life-grid-caption"><span>Our Creative Space</span></div>
         </div>
-      </div></div>
+        <div class="life-grid-item">
+          <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=600&q=80" alt="Team collaboration">
+          <div class="life-grid-caption"><span>Team Brainstorming</span></div>
+        </div>
+        <div class="life-grid-item">
+          <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="Team celebration">
+          <div class="life-grid-caption"><span>Celebrating Wins</span></div>
+        </div>
+        <div class="life-grid-item">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Workshop session">
+          <div class="life-grid-caption"><span>Skill Workshops</span></div>
+        </div>
+        <div class="life-grid-item">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80" alt="Team outing">
+          <div class="life-grid-caption"><span>Team Outings</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Application Modal -->
-  <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content" style="border-radius:20px;border:1px solid var(--border)">
-        <div class="modal-header" style="border-bottom:1px solid var(--border)">
-          <h5 class="modal-title" id="applyModalLabel" style="font-family:'Syne',sans-serif;font-weight:700">Apply for Position</h5>
+  <!-- ══ CTA SECTION ══ -->
+  <section class="career-cta">
+    <div class="container text-center" data-aos="fade-up">
+      <div class="hero-pill d-inline-flex mb-3 px-2 py-1" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.8)">
+         Open Application
+      </div>
+      <h2 class="mb-3">Don't See Your Role?</h2>
+      <p class="mb-4">We're always on the lookout for talented, passionate people.<br>Send us your CV directly and let's talk.</p>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a id="ctaWhatsappBtn" href="#" target="_blank" class="btn-cta-whatsapp">
+          <iconify-icon icon="mdi:whatsapp"></iconify-icon> Chat on WhatsApp
+        </a>
+        <a href="mailto:contact@shriiitrackingsolutions.com" class="btn-cta-email">
+          <iconify-icon icon="mdi:email-outline"></iconify-icon> Send Your CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ APPLY MODAL ══ -->
+  <div class="modal fade career-modal" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="applyModalLabel">
+            Apply Now
+            <span class="position-chip" id="modalPositionChip">Position</span>
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body p-4">
-          <form id="applicationForm">
+        <div class="modal-body">
+          <p style="color:var(--text-muted);font-size:0.88rem;margin-bottom:1.5rem">
+            Fill in your details below. Clicking <strong>"Submit via WhatsApp"</strong> will open a pre-filled WhatsApp message — no forms to wait on!
+          </p>
+          <form id="applicationForm" novalidate>
+
             <div class="row g-3">
-              <div class="col-md-6"><label class="form-label fw-semibold">Full Name *</label><input type="text" class="form-control" style="border-radius:12px;border:1px solid var(--border)" required></div>
-              <div class="col-md-6"><label class="form-label fw-semibold">Email *</label><input type="email" class="form-control" style="border-radius:12px;border:1px solid var(--border)" required></div>
-              <div class="col-md-6"><label class="form-label fw-semibold">Phone *</label><input type="tel" class="form-control" style="border-radius:12px;border:1px solid var(--border)" required></div>
-              <div class="col-md-6"><label class="form-label fw-semibold">Position Applied</label><input type="text" class="form-control" id="modalPosition" style="border-radius:12px;border:1px solid var(--border)" readonly></div>
-              <div class="col-12"><label class="form-label fw-semibold">Portfolio / LinkedIn URL</label><input type="url" class="form-control" style="border-radius:12px;border:1px solid var(--border)" placeholder="https://"></div>
-              <div class="col-12"><label class="form-label fw-semibold">Upload Resume</label><input type="file" class="form-control" style="border-radius:12px;border:1px solid var(--border)" accept=".pdf,.doc,.docx"></div>
-              <div class="col-12"><label class="form-label fw-semibold">Cover Letter</label><textarea class="form-control" rows="4" style="border-radius:12px;border:1px solid var(--border);resize:none" placeholder="Tell us why you're a great fit..."></textarea></div>
-              <div class="col-12"><button type="submit" class="btn w-100 text-white fw-bold" style="background:var(--accent-secondary);border:none;border-radius:50px;padding:0.75rem">Submit Application</button></div>
+              <div class="col-md-6">
+                <div class="floating-group" id="fg-name">
+                  <input type="text" class="float-input" id="appName" placeholder=" " autocomplete="name" required>
+                  <label for="appName">Full Name *</label>
+                  <div class="invalid-hint">Please enter your full name.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="floating-group" id="fg-phone">
+                  <input type="tel" class="float-input" id="appPhone" placeholder=" " autocomplete="tel" required>
+                  <label for="appPhone">Phone Number *</label>
+                  <div class="invalid-hint">Please enter a valid phone number.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="floating-group" id="fg-email">
+                  <input type="email" class="float-input" id="appEmail" placeholder=" " autocomplete="email" required>
+                  <label for="appEmail">Email Address *</label>
+                  <div class="invalid-hint">Please enter a valid email address.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="floating-group has-value" id="fg-position">
+                  <input type="text" class="float-input" id="appPosition" placeholder=" " readonly>
+                  <label for="appPosition">Position Applied</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="floating-group" id="fg-exp">
+                  <input type="text" class="float-input" id="appExp" placeholder=" ">
+                  <label for="appExp">Years of Experience</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="floating-group" id="fg-portfolio">
+                  <input type="url" class="float-input" id="appPortfolio" placeholder=" ">
+                  <label for="appPortfolio">Portfolio / LinkedIn URL</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="floating-group textarea" id="fg-message">
+                  <textarea class="float-textarea" id="appMessage" rows="4" placeholder=" "></textarea>
+                  <label for="appMessage">Why are you a great fit? (Cover Letter)</label>
+                </div>
+              </div>
+              <div class="col-12 mt-2">
+                <button type="submit" class="btn-whatsapp-submit" id="submitApplyBtn">
+                  <iconify-icon icon="mdi:whatsapp"></iconify-icon>
+                  Submit via WhatsApp
+                </button>
+              </div>
             </div>
+
           </form>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Life at Shriii -->
-  <section>
-    <div class="container">
-      <div class="section-heading text-center" data-aos="fade-up"><h2>Life at <span class="gradient-text">Shriii</span></h2><p>A glimpse into our vibrant workplace culture.</p></div>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-up"><div class="life-card"></div></div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><div class="life-card" style="background:linear-gradient(135deg, rgba(139,92,246,0.2), rgba(49,10,110,0.15))"></div></div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><div class="life-card" style="background:linear-gradient(135deg, rgba(196,155,255,0.2), rgba(176,122,255,0.15))"></div></div>
-      </div>
+  <!-- Toast -->
+  <div class="career-toast" id="careerToast">
+    <iconify-icon icon="mdi:check-circle"></iconify-icon>
+    <div>
+      <div class="toast-title">Application Sent!</div>
+      <div class="toast-msg">Opening WhatsApp with your application details.</div>
     </div>
-  </section>
-
-  <!-- Open Application CTA -->
-  <section class="cta-banner">
-    <div class="container text-center" data-aos="fade-up">
-      <h2>Don't See Your Role?</h2>
-      <p>We're always looking for talented people. Send your resume to:</p>
-      <a href="mailto:contact@shriiitrackingsolutions.com" class="btn btn-light btn-lg" style="border-radius:50px;font-weight:700">contact@shriiitrackingsolutions.com</a>
-    </div>
-  </section>
+  </div>
 
   <footer id="footer"></footer>
   <button id="backToTop" aria-label="Back to top"><iconify-icon icon="mdi:arrow-up"></iconify-icon></button>
@@ -191,13 +779,6 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   <script src="./js/script.js"></script>
-  <script>
-    // Apply button position pass-through
-    document.querySelectorAll('.apply-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        document.getElementById('modalPosition').value = btn.dataset.position;
-      });
-    });
-  </script>
+  <script src="./js/career.js"></script>
 </body>
 </html>
