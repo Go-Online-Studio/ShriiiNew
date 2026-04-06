@@ -62,7 +62,7 @@
     navbarEl.innerHTML = `
       <div class="container">
         <a class="navbar-brand" href="${BASE}index.html">
-          <img src="${BASE}images/BrandLogo.webp" alt="Shriii Tracking Solution">
+          <img width="140.44px" height="50px" src="${BASE}images/BrandLogo.webp" alt="Shriii Tracking Solution">
         </a>
 
         <button class="navbar-toggler border-0 d-lg-none" type="button"
@@ -136,7 +136,7 @@
     mobileNavEl.innerHTML = `
       <div class="offcanvas-header">
         <a class="navbar-brand" href="${BASE}index.html">
-          <img src="${BASE}images/BrandLogo.webp" alt="Shriii Tracking Solution" style="height:36px;width:auto;">
+          <img width="140.44px" height="50px" src="${BASE}images/BrandLogo.webp" alt="Shriii Tracking Solution" style="height:36px;width:auto;">
         </a>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
@@ -196,7 +196,7 @@
         <div class="row g-4">
           <div class="col-lg-3 col-md-6">
             <div class="footer-brand">
-              <img src="${BASE}images/BrandLogoWhite.webp" alt="Shriii Tracking Solution">
+              <img width="140.44px" height="50px" src="${BASE}images/BrandLogoWhite.webp" alt="Shriii Tracking Solution">
             </div>
             <p class="footer-tagline">Empowering local businesses to thrive online.</p>
             <div class="footer-social">
