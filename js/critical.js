@@ -192,7 +192,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 widthControl1">
-            <h5>Quick Links</h5>
+            <h2 class="h5">Quick Links</h2>
             <ul class="footer-links">
               <li><a href="${BASE}index.html">Home</a></li>
               <li><a href="${BASE}about.html">About Us</a></li>
@@ -201,7 +201,7 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 widthControl2">
-            <h5>Our Services</h5>
+            <h2 class="h5">Our Services</h2>
             <ul class="footer-links">
               <li><a href="${BASE}services/web-development/wordpress-development.html">WordPress Development</a></li>
               <li><a href="${BASE}services/seo/local-seo.html">Local SEO</a></li>
@@ -210,7 +210,7 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5>Locate Us</h5>
+            <h2 class="h5">Locate Us</h2>
             <p style="margin-bottom:0.5rem;">
               <iconify-icon icon="mdi:phone-outline" style="color:var(--accent-bright)"></iconify-icon>
               <a href="tel:+916354710794">+91 63547 10794</a>

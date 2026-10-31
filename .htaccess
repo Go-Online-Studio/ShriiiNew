@@ -111,7 +111,7 @@ ServerSignature Off
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 
   # Content Security Policy (CSP)
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://code.iconify.design; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; media-src 'self' data: https:; frame-src https://www.google.com https://maps.google.com; connect-src 'self' https://api.whatsapp.com https://web.whatsapp.com https://api.iconify.design https://api.simplesvg.com https://api.unisvg.com;"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self' https://api.whatsapp.com https://web.whatsapp.com; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://code.iconify.design; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; media-src 'self' data: https:; frame-src https://www.google.com https://maps.google.com; connect-src 'self' https://api.whatsapp.com https://web.whatsapp.com https://api.iconify.design https://api.simplesvg.com https://api.unisvg.com; worker-src 'self' blob:; upgrade-insecure-requests;"
 </IfModule>
 
 # 404 fallback

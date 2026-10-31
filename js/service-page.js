@@ -85,7 +85,8 @@
       }
       var overviewImageHtml = '<div class="overview-decoration"></div>';
       if (service.overviewImage) {
-        overviewImageHtml = '<div class="story-decoration"><img src="' + service.overviewImage.src + '" alt="' + service.overviewImage.alt + '"></div>';
+        var imgSrc = service.overviewImage.src.startsWith('http') ? service.overviewImage.src : (BASE + service.overviewImage.src);
+      overviewImageHtml = '<div class="story-decoration"><img src="' + imgSrc + '" alt="' + service.overviewImage.alt + '"></div>';
       }
 
       ovEl.innerHTML = '<div class="container"><div class="row align-items-center g-5">' +

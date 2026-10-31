@@ -3,7 +3,7 @@
    ================================================ */
 
 /* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+/* Google Fonts imported via <link> in HTML for preconnect & non-blocking load */
 
 /* ---------- CSS Variables ---------- */
 :root {
@@ -299,7 +299,8 @@ h3,.h3 { font-size: clamp(24px, 2.2vw, 30px); }
   margin-top: 2rem; margin-bottom: 1.5rem;
 }
 .stat-item { text-align: center; }
-.stat-counter {
+.stat-counter,
+.stat-number {
   font-family: 'Geom', sans-serif;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 800;
@@ -457,7 +458,7 @@ h3,.h3 { font-size: clamp(24px, 2.2vw, 30px); }
   font-weight: 600; margin-bottom: 0.4rem;
   width: fit-content;
 }
-.portfolio-overlay h4 { color: #fff; font-size: 1.1rem; font-weight: 700; }
+.portfolio-overlay h3 { color: #fff; font-size: 1.1rem; font-weight: 700; }
 
 /* ---------- Tech Pills ---------- */
 .tech-pills { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; padding: 8px 0; }
@@ -614,7 +615,7 @@ h3,.h3 { font-size: clamp(24px, 2.2vw, 30px); }
   display: flex; align-items: center; justify-content: center;
   color: var(--accent-secondary); font-size: 1.4rem;
 }
-.contact-info-card h5 { font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem; }
+.contact-info-card h5, .contact-info-card h3.h5 { font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem; }
 .contact-info-card p, .contact-info-card a {
   color: var(--text-muted); font-size: 0.9rem; margin: 0;
 }
@@ -673,7 +674,7 @@ footer {
 footer .container> .row{
   justify-content: space-between;
 }
-footer h5 { color: #fff; font-weight: 700; margin-bottom: 1.2rem; font-size: 1.1rem; }
+footer h5, footer h2.h5 { color: #fff; font-weight: 700; margin-bottom: 1.2rem; font-size: 1.1rem; }
 footer a { color: rgba(255,255,255,0.7); transition: color 0.2s; font-size: 0.92rem; }
 footer a:hover { color: var(--accent-bright); }
 footer p { font-size: 0.92rem; }
