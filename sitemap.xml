@@ -1,79 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/about.html</loc>
+    <loc>https://shriiitrackingsolution.in/about</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/career.html</loc>
+    <loc>https://shriiitrackingsolution.in/career</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/contact.html</loc>
+    <loc>https://shriiitrackingsolution.in/contact</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/</loc>
+    <loc>https://shriiitrackingsolution.in/</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/gmb-services/gmb-management.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/gmb-services/gmb-management</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/gmb-services/gmb-review-management.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/gmb-services/gmb-review-management</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/gmb-services/gmb-setup-optimization.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/gmb-services/gmb-setup-optimization</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/graphic-design/branding-identity.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/graphic-design/branding-identity</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/graphic-design/logo-design.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/graphic-design/logo-design</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/graphic-design/print-design.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/graphic-design/print-design</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/graphic-design/social-media-design.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/graphic-design/social-media-design</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/local-seo.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/seo/local-seo</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/off-page-seo.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/seo/off-page-seo</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/on-page-seo.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/seo/on-page-seo</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/seo/technical-seo.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/seo/technical-seo</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/custom-web-development.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/web-development/custom-web-development</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/ecommerce-development.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/web-development/ecommerce-development</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/landing-page-design.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/web-development/landing-page-design</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://go-online-studio.github.io/ShriiiNew/services/web-development/wordpress-development.html</loc>
+    <loc>https://shriiitrackingsolution.in/services/web-development/wordpress-development</loc>
     <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>

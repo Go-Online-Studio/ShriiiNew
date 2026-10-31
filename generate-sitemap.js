@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const BASE_URL = 'https://go-online-studio.github.io/ShriiiNew';
+const BASE_URL = 'https://shriiitrackingsolution.in';
 const EXCLUDE_DIRS = ['.git', '.github', 'node_modules', 'css', 'js', 'images', 'data'];
 const SITEMAP_FILE = 'sitemap.xml';
 
@@ -25,13 +25,11 @@ function getGitLastMod(filePath) {
   try {
     const result = execSync(`git log -1 --format=%cI -- "${filePath}"`).toString().trim();
     if (result) {
-      // Extract only the date part YYYY-MM-DD
       return result.split('T')[0];
     }
   } catch (err) {
-    console.error(`Error getting git date for ${filePath}:`, err.message);
+    // ignore
   }
-  // Return current date as fallback if git history is not available
   return new Date().toISOString().split('T')[0];
 }
 
@@ -42,19 +40,26 @@ function generateSitemap() {
 
   for (const file of files) {
     const relativePath = path.relative('.', file).replace(/\\/g, '/');
-    const url = `${BASE_URL}/${relativePath}`.replace(/\/index\.html$/, '/');
+    let url = `${BASE_URL}/${relativePath}`.replace(/\.html$/, '');
+    if (url.endsWith('/index')) {
+      url = url.replace(/\/index$/, '/');
+    }
+
     const lastmod = getGitLastMod(file);
+    const priority = url === `${BASE_URL}/` ? '1.0' : (url.includes('/services/') ? '0.85' : '0.8');
 
     sitemap += '  <url>\n';
     sitemap += `    <loc>${url}</loc>\n`;
     sitemap += `    <lastmod>${lastmod}</lastmod>\n`;
+    sitemap += `    <changefreq>${url === `${BASE_URL}/` ? 'weekly' : 'monthly'}</changefreq>\n`;
+    sitemap += `    <priority>${priority}</priority>\n`;
     sitemap += '  </url>\n';
   }
 
-  sitemap += '</urlset>';
+  sitemap += '</urlset>\n';
 
   fs.writeFileSync(SITEMAP_FILE, sitemap);
-  console.log(`Successfully generated ${SITEMAP_FILE} with ${files.length} URLs.`);
+  console.log(`Successfully generated ${SITEMAP_FILE} with ${files.length} clean URLs.`);
 }
 
 generateSitemap();

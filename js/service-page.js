@@ -7,36 +7,22 @@
   'use strict';
 
   // ── Step 1: Detect current page identity ──
-  var currentSlug = window.location.pathname.split('/').pop();
-  var pathParts = window.location.pathname.split('/');
-  var currentFolder = pathParts[pathParts.length - 2] || '';
+  var pathSegments = window.location.pathname.split('/').filter(Boolean);
+  var rawSlug = pathSegments.pop() || '';
+  var currentSlug = rawSlug.replace(/\.html$/i, '');
+  var currentFolder = pathSegments.pop() || '';
 
   // ── Step 2: Base path ──
   function getBasePath() {
     const path = window.location.pathname;
-    const hostname = window.location.hostname;
-    
-    // Fallback for local file:// protocol
     if (window.location.protocol === 'file:') {
-      const pathLower = path.toLowerCase();
-      if (pathLower.includes('/services/')) return '../../';
-      return './';
+      return path.toLowerCase().includes('/services/') ? '../../' : './';
     }
-
-    // Calculate segments to determine depth
-    let segments = path.replace(/\/[^/]*\.html?$/i, '').replace(/\/$/, '').split('/').filter(Boolean);
-    let depth = segments.length;
-
-    /**
-     * GITHUB PAGES SPECIAL CASE:
-     * If hosted on github.io, the first segment is the repository name (e.g., /ShriiiNew/).
-     * We don't count the repo name as a depth level because assets are inside it.
-     */
-    if (hostname.includes('github.io') && depth > 0) {
-      depth = Math.max(0, depth - 1);
+    const cleanPath = path.toLowerCase().replace(/\/$/, '');
+    if (cleanPath.includes('/services/')) {
+      return '../../';
     }
-
-    return depth > 0 ? '../'.repeat(depth) : './';
+    return './';
   }
   var BASE = getBasePath();
 
@@ -44,9 +30,14 @@
   fetch(BASE + 'data/services.json')
     .then(function (r) { return r.json(); })
     .then(function (data) {
-      var category = data.categories.find(function (c) { return c.folder === currentFolder; });
+      var category = data.categories.find(function (c) { 
+        return c.folder === currentFolder || c.id === currentFolder; 
+      });
       if (!category) return;
-      var service = category.services.find(function (s) { return s.slug === currentSlug; });
+      var service = category.services.find(function (s) { 
+        var sSlugClean = (s.slug || '').replace(/\.html$/i, '');
+        return sSlugClean === currentSlug || s.id === currentSlug; 
+      });
       if (!service) return;
       renderServicePage(service, category, data, BASE);
     })

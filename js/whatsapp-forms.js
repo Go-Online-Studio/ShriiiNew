@@ -70,9 +70,14 @@
   /* ─────────────────────────────────────────
      FIELD VALIDATION HELPERS
   ───────────────────────────────────────── */
+  function sanitizeInput(str) {
+    if (!str) return '';
+    return String(str).replace(/[<>]/g, '').trim();
+  }
+
   function getVal(id) {
     var el = document.getElementById(id);
-    return el ? el.value.trim() : '';
+    return el ? sanitizeInput(el.value) : '';
   }
 
   function markField(id, ok) {

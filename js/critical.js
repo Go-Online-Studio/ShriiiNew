@@ -29,29 +29,14 @@
   // ── Base Path Detection ──
   function getBasePath() {
     const path = window.location.pathname;
-    const hostname = window.location.hostname;
-    
-    // Fallback for local file:// protocol
     if (window.location.protocol === 'file:') {
-      const pathLower = path.toLowerCase();
-      if (pathLower.includes('/services/')) return '../../';
-      return './';
+      return path.toLowerCase().includes('/services/') ? '../../' : './';
     }
-
-    // Calculate segments to determine depth
-    let segments = path.replace(/\/[^/]*\.html?$/i, '').replace(/\/$/, '').split('/').filter(Boolean);
-    let depth = segments.length;
-
-    /**
-     * GITHUB PAGES SPECIAL CASE:
-     * If hosted on github.io, the first segment is the repository name (e.g., /ShriiiNew/).
-     * We don't count the repo name as a depth level because assets are inside it.
-     */
-    if (hostname.includes('github.io') && depth > 0) {
-      depth = Math.max(0, depth - 1);
+    const cleanPath = path.toLowerCase().replace(/\/$/, '');
+    if (cleanPath.includes('/services/')) {
+      return '../../';
     }
-
-    return depth > 0 ? '../'.repeat(depth) : './';
+    return './';
   }
 
   const BASE = getBasePath();
@@ -255,12 +240,14 @@
 
   // ── Active Link Detection ──
   function setActiveLink() {
-    const current = window.location.pathname.split('/').pop() || 'index.html';
+    const rawCurrent = window.location.pathname.split('/').filter(Boolean).pop() || 'index';
+    const current = rawCurrent.replace(/\.html$/i, '');
     document.querySelectorAll('.navbar-nav .nav-link, .mega-menu a, .offcanvas .nav-link, .offcanvas .accordion-body a').forEach(function (link) {
       link.classList.remove('active');
       var href = link.getAttribute('href') || '';
-      var linkFile = href.split('/').pop();
-      if (linkFile === current) {
+      var linkFile = href.split('/').filter(Boolean).pop() || '';
+      linkFile = linkFile.replace(/\.html$/i, '');
+      if (linkFile === current || (current === 'index' && (linkFile === '' || linkFile === 'index'))) {
         link.classList.add('active');
         var parentToggle = link.closest('.mega-dropdown');
         if (parentToggle) {
